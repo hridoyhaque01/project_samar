@@ -214,11 +214,12 @@ i{
 #hero{
     position: relative;
     min-width:100%;
-    height: 750px;
+    padding-top: 40px;
     background: linear-gradient(180deg, #FFF2C5 0%, rgba(250, 250, 250, 0) 100%);
     backdrop-filter: blur(250px);
     display: flex;
     align-items: flex-end;
+    padding-left: 72px;
 }
 
 .hero-content{
@@ -227,36 +228,36 @@ i{
     justify-content: space-between;
     align-items: center;
 }
-.hero-details{
-    padding-left: 72px;
-}
+
 .hero-details .hello_btn{
     padding:12px 24px;
     border-radius: 10px;
     background-color: var(--clr-FFD);
 }
-.btn-group .btn{
-    display: inline-block;
+
+.btn-group{
+    justify-content: start !important;
 }
+
 .hero_btn{
-    width:270px;
-    height: 84px;
+    width:250px;
+    height: 70px;
     border-radius: 16px;
     font-size: 24px;
     font-weight: 600;
 }
-.hero_btn span{
-    margin-right: 10px;
-}
+
 .btn_bdr{
     background-color: transparent;
     border: 3px solid var(--clr-00);
     margin-left: 20px;
 }
-
-.hero_img-contents .img-content{
-    position: relative;
+.hero_img-contents{
     text-align: right;
+}
+.hero_img-contents .img-content{
+    display: inline-block;
+    position: relative;
 }
 
 .img-content .back-img{
@@ -270,56 +271,66 @@ i{
 .img-content .btn{
     display: inline-block;
     position: absolute;
-    top:-20px;
+    top:120px;
     right:30px;
-}
-/*
-
-
-
-
-
-
-.img_contents img{
-    width:630px;
-    height: 716px;
-}
-.img_contents .back-img img{
-    width:615px;
-    height: 609px;
-}
-
-.img_contents .back-img{
-    position: absolute;
-    top:-20px;
-    right:35px;
-    z-index: -1;
-}
-.back-img .btn{
-    position: absolute;
     padding: 16px 24px;
-    font-size: var(--text-16);
     border-radius: 16px;
-    z-index: 1;
     background-color: var(--clr-FF);
-    color: var(--clr-00);
+    color:var(--clr-00);
 }
-.back-img .tech_btn{
-    right:0px;
-    top:160px;
+
+.img-content .design_btn{
+    right:10px;
+    margin-top: 120px;
 }
-.back-img .design_btn{
-    right:-15px;
-    top:290px;
-} */
+
+
 /*============================ RESPONSIVE DESIGN ==========================*/
+@media screen and (max-width: 1400px) {
+    
+    .img-content img{
+        width:500px;
+        height: auto;
+    }
+
+}
 
 @media screen and (max-width: 1080px) {
+
+/*============================ NAVBAR DESIGN ==========================*/
+
     .navbar_main-menu ul li a{
         font-size: var(--text-14);
     }
+
+/*============================ HERO DESIGN ==========================*/
+
+    .hero_btn{
+        width:200px;
+        height: 60px;
+        border-radius: 10px;
+    }
+
+    .hero_title{
+        font-size: var(--text-40);
+    }
+
+    .img-content img{
+        width:400px;
+        height: auto;
+    }
+
+    .img-content .btn{
+        top:90px;
+        padding:10px 15px;
+    }
+    
 }
+
 @media screen and (max-width: 992px) {
+
+/*============================ NAVBAR DESIGN ==========================*/
+
     .navbar_main-menu{
         position: fixed;
         right: -100%;
@@ -333,6 +344,7 @@ i{
         justify-content: flex-start !important;
         align-items: flex-start;
         transition: .5s;
+        z-index: 999;
     }
     .navbar_main-menu ul{
         flex-direction: column;
@@ -349,9 +361,40 @@ i{
         display: inline-block;
     }
 
+/*============================ HERO DESIGN ==========================*/
+    
+    .hero_title{
+        font-size: var(--text-36);
+    }
+    .hero_btn{
+        width:160px;
+        height: 45px;
+        border-radius: 8px;
+        font-size: var(--text-16);
+    }
+
+    .img-content img{
+        width:310px;
+        height: auto;
+    }
+    .img-content .btn{
+        top:60px;
+        right: 20px;
+        padding:8px 12px;
+        font-size: var(--text-14);
+
+    }
+    .img-content .design_btn{
+        margin-top: 80px;
+        right: 8px;
+    }
+    
 }
 
 @media screen and (max-width: 767px) {
+
+/*============================ NAVBAR DESIGN ==========================*/
+
     .navbar-button .form-btn .nav-btn{
         padding: 7px 10px;
     }
@@ -359,8 +402,28 @@ i{
     .show_menu{
         margin-left: 8px;
     }
+
+
+    /* .hero-content{
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+    }
+    .hero_img-contents{
+        
+        grid-row-start: 1;
+
+    }
+    .hero_img-contents .img-content{
+        text-align: center;
+    }
+    .img-content .btn{
+        top:70px;
+    } */
 }
 @media screen and (max-width: 575px) {
+
+/*============================ NAVBAR DESIGN ==========================*/
+
     .navbar-button .form-btn .nav-btn{
         padding: 5px 8px;
         font-size: 12px;
