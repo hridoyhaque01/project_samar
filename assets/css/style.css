@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&family=Playfair+Display&family=Plus+Jakarta+Sans&family=Poppins:wght@400;600;700&family=Work+Sans:wght@400;600&display=swap');
+
+/*============================== DIFAULT SETTINGS ======================== */
 
 *{
     margin:0;
@@ -10,7 +12,7 @@
 }
 
 body{
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color:#fff ;
     background-color: var(--bg-clr);
 }
@@ -19,36 +21,67 @@ body{
 :root{
 
 /*============================== ASSIGN ELEMENTS FONT SIZE ======================== */
-
-    --logo-text : ;
-    --extra-small-text : ;
-    --hero-title-text : ;
-    --small-text : ;
-    --title-text : ;
-    --service-item-text : ;
+    
+    --text-64 : 54px ;
+    --text-52 : 52px ;
+    --text-40 : 40px ;
+    --text-36 : 36px ;
+    --text-28 : 28px ;
+    --text-24 : 24px;
+    --text-20 : 20px ;
+    --text-18 : 18px ;
+    --text-16 : 16px ;
+    --text-14 : 14px ;
+    --text-12 : 12px ;
 
 /*============================== ASSIGN ELEMETNS COLOR ======================== */
 
-    --nav-link-active : ;
-    --clr : ;
-    --para-clr : ;
-    --bg-clr : ;
-    --cnt-bg: ;
-    --slider-btn: ;
+    --clr-23 : #232323;
+    --clr-2B : #2B2C34;
+    --clr-08 : #08080B;
+    --clr-4D : #4D5566;
+    --clr-59 : #594F43;
+    --clr-00 : #000000;
+    --clr-FC : #FCA61F;
+    --clr-FF : #FFFFFF;
+    --clr-73 : #73737D;
+    --clr-F3 : #F3F2FF;
+    --clr-001 : #001858;
+    --clr-09 : #091427;
+    --clr-40 : #403930;
+    --clr-80 : #808080;
+    --clr-D6 : #D6D6D6;
+    --clr-ED : #EDC048;
+    --clr-FFD : #FFDD00;
+    --clr-FDB : #FFDDBF;
+    --clr-FF8 : #FFF8F2;
+    --clr-FFE : #FFFFFE;
+    --clr-F9 : #FFF9F2;
+
+/*============================== FONT FAMILY ======================== */
+
+    --Inter : 'Inter', sans-serif;
+    --Merriweather : 'Merriweather', serif;
+    --Playfair :'Playfair Display', serif;
+    --Jakarta : 'Plus Jakarta Sans', sans-serif;
+    --Work : 'Work Sans', sans-serif;
+
 }
+
+
 
 /*============================== COMMON WORK ======================== */
 
 
 .container{
-    width:90%;
+    width:94%;
     margin:0 auto;
-    overflow: hidden;
 }
 
 i{
     line-height: 0;
     display: inline-block;
+    cursor: pointer;
 }
 
 .grid{
@@ -61,21 +94,9 @@ i{
 }
 
 .hero_title{
-    /* font-size: ;
-    font-weight: ;
-    line-height: ; */
-}
-
-.section_title{
-    /* font-size:;
-    font-weight: ;
-    line-height: ; */
-}
-
-.service_title{
-    /* font-size: ;
-    font-weight: ;
-    line-height: ; */
+    font-size: var(--text-64) ;
+    font-weight: 600;
+    line-height: 125%;
 }
 
 .flex{
@@ -83,12 +104,165 @@ i{
     justify-content: center;
     align-items: center;
 }
+
 .flex-between{
     justify-content: space-between;
 }
 
-section{
+.section{
+    position: relative;
+    overflow: hidden;
 }
+
+.py-3{
+    padding: 30px;
+}
+
+.details {
+    font-size: 16px;
+    line-height: 24px;
+    color:var(--clr-73);
+}
+
+.btn{
+    border:0;
+    outline: 0;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-yellow{
+    background-color: var(--clr-FC);
+    color: var(--clr-FF);
+}
+
 /*============================== END COMMON WORK ======================== */
 
 /*============================== DESIGN FOR NAVBAR STYLE ======================== */
+
+
+.header{
+    position: relative;
+    min-width: 100%;
+    background-color: var(--clr-F9);
+    transition: .4s;
+    padding: 15px;
+}
+
+.navbar-content,
+.navbar_main-menu ul{
+    column-gap: 20px;
+}
+
+.navbar_main-menu ul li a{
+    position: relative;
+    display: inline-block;
+    color: var(--clr-2B);
+    font-size: var(--text-16);
+    font-weight: 600;
+    transition: .4s;
+}
+
+.navbar_main-menu ul li a::after{
+    position: absolute;
+    content: "";
+    bottom:-2px;
+    left:0;
+    width:0;
+    height: 2px;
+    background-color: var(--clr-FC);
+    transition: .4s;
+}
+
+.navbar_main-menu ul li a:hover,
+.navbar_main-menu ul li a.active{
+    color:var(--clr-FC);
+}
+
+.navbar_main-menu ul li a:hover::after,
+.navbar_main-menu ul li a.active::after{
+    width: 70%;
+}
+
+.navbar-button .form-btn .nav-btn{
+    padding: 10px 17px;
+    border-radius: 4px;
+    column-gap: 3px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.close_menu ,
+.show_menu{
+    display: none;
+    font-size: var(--text-24);
+    color:var(--clr-00);
+}
+.show_menu{
+    margin-left: 15px;
+}
+
+/*================ MOBILE NAVBAR STYLING ========================*/
+.mobile_navbar-content .navbar_main-menu{
+    display: block;
+    position: fixed;
+    right: 0;
+    top:0;
+    width:55%;
+    min-height: 100vh;
+    background-color:var(--clr-FF8);
+    padding: 60px 30px 30px 30px;
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: -2px 0 10px rgba(73, 73, 73, 0.4);
+}
+
+.mobile_navbar-content .navbar_main-menu ul{
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: flex-start !important;
+}
+
+.mobile_navbar-content .navbar_main-menu  .close_menu{
+    position: absolute;
+    top:20px;
+    left:30px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1080px) {
+    .navbar_main-menu ul li a{
+        font-size: var(--text-14);
+    }
+}
+@media screen and (max-width: 992px) {
+    .navbar_main-menu{
+        display: none;
+    }
+    .close_menu ,
+    .show_menu{
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 767px) {
+    .navbar-button .form-btn .nav-btn{
+        padding: 7px 10px;
+    }
+    
+    .show_menu{
+        margin-left: 8px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .navbar-button .form-btn .nav-btn{
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+    .navbar-logo a img{
+        width:80%;
+    }
+}
