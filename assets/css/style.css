@@ -13,7 +13,6 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    color:#fff ;
     background-color: var(--bg-clr);
 }
 
@@ -26,6 +25,7 @@ body{
     --text-52 : 52px ;
     --text-40 : 40px ;
     --text-36 : 36px ;
+    --text-32 : 32px ;
     --text-28 : 28px ;
     --text-24 : 24px;
     --text-20 : 20px ;
@@ -47,6 +47,7 @@ body{
     --clr-73 : #73737D;
     --clr-F3 : #F3F2FF;
     --clr-001 : #001858;
+    --clr-4E : #4E5E80;
     --clr-09 : #091427;
     --clr-40 : #403930;
     --clr-80 : #808080;
@@ -74,7 +75,7 @@ body{
 
 
 .container{
-    width:94%;
+    width:93%;
     margin:0 auto;
 }
 
@@ -147,7 +148,7 @@ i{
     min-width: 100%;
     background-color: var(--clr-F9);
     transition: .4s;
-    padding: 15px;
+    padding: 15px 0;
 }
 
 .navbar-content,
@@ -219,7 +220,7 @@ i{
     backdrop-filter: blur(250px);
     display: flex;
     align-items: flex-end;
-    padding-left: 72px;
+    padding-left: 48px;
 }
 
 .hero-content{
@@ -284,6 +285,135 @@ i{
     margin-top: 120px;
 }
 
+/*============================ RESPONSIVE DESIGN ==========================*/
+
+
+.CaseStudies{
+    min-width: 100%;
+    background: linear-gradient(180deg, #EFF0F3 0%, rgba(255, 221, 191, 0) 100%);
+    padding:84px 0;
+}
+.case_title h2{
+    color: var(--clr-40);
+    font-size: var(--text-40);
+    font-weight: 600;
+}
+.case_title a{
+    justify-content: start;
+    column-gap: 4px;
+    text-transform: capitalize;
+    color: var(--clr-2B);
+    margin: 32px 0;
+}
+.cases .single_case{
+   grid-template-columns: 1fr 1fr;
+   column-gap: 76px;
+   height: 400px;
+   align-items: center; 
+   background-color: var(--clr-F9);
+   border-radius: 24px;
+   padding-left: 72px;
+   margin: 28px 0;
+}
+.cases .HoneyBunny{
+    padding:41px 41px 41px 72px; 
+}
+.single_case h3{
+    font-size: var(--text-32);
+    font-weight: 600;
+    color: var(--clr-40);
+}
+.single_case p{
+    font-size: var(--text-20);
+    font-weight: 500;
+    line-height: 150%;
+    color:var(--clr-59);
+    margin: 24px 0;
+}
+.single_case a{
+    font-size: var(--text-20);
+    color:var(--clr-4E);
+}
+/*============================ RESPONSIVE DESIGN ==========================*/
+.sec_boxes{
+    padding: 80px 0;
+}
+.grid-boxes{
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+}
+.single-box{
+    position: relative;
+    padding:40px;
+    background-color: #001858;
+    height: 402px;
+    display: flex;
+    align-items: flex-end;
+}
+.span-2{
+    grid-column: span 2;
+}
+.grid_single-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.box-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box-details p{
+    font-size: var(--text-14);
+}
+.single-box .btn-box{
+    position: absolute;
+    top:40px;
+    left:40px;
+}
+.box-img .fixed-top{
+    transform: translateY(-113px) translateX(-70px);
+}
+.box-img .fixed-bottom{
+    transform: translateY(49px) translateX(-40px);
+}
+/* 
+.sec_boxes{
+    padding: 80px 0;
+}
+.grid-boxes{
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+}
+
+.single-box{
+    position: relative;
+    padding:40px 64px 40px 40px;
+    background-color: #001858;
+    height: 402px;
+    display: flex;
+    align-items: flex-end;
+}
+.span-2{
+    grid-column: span 2;
+}
+/*  */
+/* .single-box .fixed-top{
+    position: absolute;
+    top:-17px;
+    right: 300px;
+}
+.single-box .fixed-bottom{
+    position: absolute;
+    bottom:-9px;
+    right:110px;
+}
+
+.single-box .btn-box{
+    position: absolute;
+    top:40px;
+    left:40px;
+}  */
 
 /*============================ RESPONSIVE DESIGN ==========================*/
 @media screen and (max-width: 1400px) {
