@@ -97,6 +97,7 @@ i{
     font-size: var(--text-64) ;
     font-weight: 600;
     line-height: 125%;
+    color:var(--clr-40);
 }
 
 .flex{
@@ -201,38 +202,117 @@ i{
     margin-left: 15px;
 }
 
-/*================ MOBILE NAVBAR STYLING ========================*/
+/*============== SHOW MENU CONTENT =================*/
 .mobile_navbar-content .navbar_main-menu{
-    display: block;
-    position: fixed;
     right: 0;
-    top:0;
-    width:55%;
-    min-height: 100vh;
-    background-color:var(--clr-FF8);
-    padding: 60px 30px 30px 30px;
-    border-radius: 15px 0px 0px 15px;
-    box-shadow: -2px 0 10px rgba(73, 73, 73, 0.4);
 }
 
-.mobile_navbar-content .navbar_main-menu ul{
-    flex-direction: column;
-    row-gap: 15px;
-    align-items: flex-start !important;
+
+
+/*============================ HERO SECTION DESIGN ==========================*/
+
+#hero{
+    position: relative;
+    min-width:100%;
+    height: 750px;
+    background: linear-gradient(180deg, #FFF2C5 0%, rgba(250, 250, 250, 0) 100%);
+    backdrop-filter: blur(250px);
+    display: flex;
+    align-items: flex-end;
 }
 
-.mobile_navbar-content .navbar_main-menu  .close_menu{
+.hero-content{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-details{
+    padding-left: 72px;
+}
+.hero-details .hello_btn{
+    padding:12px 24px;
+    border-radius: 10px;
+    background-color: var(--clr-FFD);
+}
+.btn-group .btn{
+    display: inline-block;
+}
+.hero_btn{
+    width:270px;
+    height: 84px;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.hero_btn span{
+    margin-right: 10px;
+}
+.btn_bdr{
+    background-color: transparent;
+    border: 3px solid var(--clr-00);
+    margin-left: 20px;
+}
+
+.hero_img-contents .img-content{
+    position: relative;
+    text-align: right;
+}
+
+.img-content .back-img{
+    display: inline-block;
     position: absolute;
-    top:20px;
-    left:30px;
+    top:-20px;
+    right:30px;
+    z-index: -1;
 }
 
+.img-content .btn{
+    display: inline-block;
+    position: absolute;
+    top:-20px;
+    right:30px;
+}
+/*
 
 
 
 
 
 
+.img_contents img{
+    width:630px;
+    height: 716px;
+}
+.img_contents .back-img img{
+    width:615px;
+    height: 609px;
+}
+
+.img_contents .back-img{
+    position: absolute;
+    top:-20px;
+    right:35px;
+    z-index: -1;
+}
+.back-img .btn{
+    position: absolute;
+    padding: 16px 24px;
+    font-size: var(--text-16);
+    border-radius: 16px;
+    z-index: 1;
+    background-color: var(--clr-FF);
+    color: var(--clr-00);
+}
+.back-img .tech_btn{
+    right:0px;
+    top:160px;
+}
+.back-img .design_btn{
+    right:-15px;
+    top:290px;
+} */
+/*============================ RESPONSIVE DESIGN ==========================*/
 
 @media screen and (max-width: 1080px) {
     .navbar_main-menu ul li a{
@@ -241,13 +321,36 @@ i{
 }
 @media screen and (max-width: 992px) {
     .navbar_main-menu{
-        display: none;
+        position: fixed;
+        right: -100%;
+        top:0;
+        width:55%;
+        min-height: 100vh;
+        background-color:var(--clr-FF8);
+        padding: 60px 30px 30px 30px;
+        border-radius: 15px 0px 0px 15px;
+        box-shadow: -2px 0 10px rgba(73, 73, 73, 0.4);
+        justify-content: flex-start !important;
+        align-items: flex-start;
+        transition: .5s;
+    }
+    .navbar_main-menu ul{
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: flex-start !important;
+    }
+    .navbar_main-menu  .close_menu{
+        position: absolute;
+        top:20px;
+        left:30px;
     }
     .close_menu ,
     .show_menu{
         display: inline-block;
     }
+
 }
+
 @media screen and (max-width: 767px) {
     .navbar-button .form-btn .nav-btn{
         padding: 7px 10px;
