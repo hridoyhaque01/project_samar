@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@400;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    color:#fff ;
+    background-color: var(--bg-clr);
+}
+
+/*============================== CREATE ROOT DIRECTORY======================== */
+:root{
+
+/*============================== ASSIGN ELEMENTS FONT SIZE ======================== */
+
+    --logo-text : ;
+    --extra-small-text : ;
+    --hero-title-text : ;
+    --small-text : ;
+    --title-text : ;
+    --service-item-text : ;
+
+/*============================== ASSIGN ELEMETNS COLOR ======================== */
+
+    --nav-link-active : ;
+    --clr : ;
+    --para-clr : ;
+    --bg-clr : ;
+    --cnt-bg: ;
+    --slider-btn: ;
+}
+
+/*============================== COMMON WORK ======================== */
+
+
+.container{
+    width:90%;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+i{
+    line-height: 0;
+    display: inline-block;
+}
+
+.grid{
+    display: grid;
+}
+
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+
+.hero_title{
+    /* font-size: ;
+    font-weight: ;
+    line-height: ; */
+}
+
+.section_title{
+    /* font-size:;
+    font-weight: ;
+    line-height: ; */
+}
+
+.service_title{
+    /* font-size: ;
+    font-weight: ;
+    line-height: ; */
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-between{
+    justify-content: space-between;
+}
+
+section{
+}
+/*============================== END COMMON WORK ======================== */
+
+/*============================== DESIGN FOR NAVBAR STYLE ======================== */
