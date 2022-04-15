@@ -67,12 +67,12 @@
 
     <!--==================================== MAIN SECTION STRUCTURE DESIGN ================================= -->
     <main>
-
+        <!-- data-aos-delay="300" -->
         <!--==================================== HERO SECTION STRUCTURE DESIGN ================================= -->
 
         <section id="hero">
                 <div class="hero-content grid">
-                    <div class="hero-details">
+                    <div class="hero-details" data-aos="fade-up" >
                         <button class="btn hello_btn">
                             👋 Hello All
                         </button>
@@ -89,7 +89,7 @@
                                 </button>
                             </div>
                     </div>
-                    <div class="hero_img-contents">
+                    <div class="hero_img-contents" data-aos="fade-up">
                         <div class="img-content">
                             <img src="assets/img/home/12 1.png" alt="">
                             <div class="back-img">
@@ -110,40 +110,40 @@
 
         <section class="CaseStudies">
             <div class="container">
-                <div class="case_title">
+                <div class="case_title" data-aos="fade-up">
                     <h2>My Recent CaseStudies</h2>
                     <a href="#" class="flex">see all <i class='bx bx-right-arrow-alt'></i></a>
                 </div>
 
                 <div class="cases ">
-                    <div class="single_case grid">
+                    <div class="single_case grid" data-aos="fade-up">
                         <div class="case_details">
                             <h3>Sheepify States</h3>
                             <p>Designed some empty state screens in kawaii style for the popular sheepify app </p>
                             <a href="">View Case Study</a>
                         </div>
                         <div class="case_picture">
-                            <img src="assets/img/home/Mask group.png" alt="" >
+                            <div class="pictures picture1"></div>
                         </div>
                     </div>
-                    <div class="single_case grid HoneyBunny">
+                    <div class="single_case grid HoneyBunny" data-aos="fade-up">
                         <div class="case_details">
                             <h3>HoneyBunny</h3>
                             <p>A colorful dashboard to manage your fictional projects and team, all in a single place.</p>
                             <a href="">View Case Study</a>
                         </div>
                         <div class="case_picture">
-                            <img src="assets/img/home/Home 1.png" alt="" class="img-fluid">
+                            <div class="pictures picture2"></div>
                         </div>
                     </div>
-                    <div class="single_case grid">
+                    <div class="single_case grid" data-aos="fade-up">
                         <div class="case_details">
                             <h3>Memrise Redesign</h3>
                             <p>I redesigned the popular language learning app memrise in kawaii style to make it more cute.</p>
                             <a href="">View Case Study</a>
                         </div>
                         <div class="case_picture">
-                            <img src="assets/img/home/Mask group (1).png" alt="">
+                            <div class="pictures picture3"></div>
                         </div>
                     </div>
                 </div>
@@ -156,10 +156,12 @@
         <section class="sec_boxes">
             <div class="container">
                 <div class="grid grid-boxes">
-                    <div class="single-box span-2 ">
+
+
+                    <div class="single-box span-2 box1" data-aos="fade-right">
                         <div class="grid_single-box">
+                            <button class="btn btn-box">CaseStudies</button>
                             <div class="box-details">
-                                <button class="btn btn-box">CaseStudies</button>
                                 <div class="box-texts">
                                     <h4>CASE STUDIES</h4>
                                     <p>Have a look on my caseStudies and process ... ( <a href="">read more</a>)</p>
@@ -170,41 +172,80 @@
                                 <img src="assets/img/home/Rectangle 23.png" class="fixed-bottom" alt="">
                             </div>
                         </div>
-                       
-                        
                     </div>
-                    
+
+                    <div class="single-box p-4 box2" data-aos="fade-up">
+                        <button class="btn btn-box">Tips & Trick</button>
+                        <div class="box-details">
+                            <div class="box-images flex">
+                                <div class="small">
+                                    <img src="assets/img/Time Square.png" alt="">
+                                </div>
+                                <div class="large">
+                                    <img src="assets/img/Time Square.png" alt="">
+                                </div>
+                                <div class="small">
+                                    <img src="assets/img/Time Square.png" alt="">
+                                </div>
+                            </div>
+                            <div class="box-texts">
+                                <h4>PM MOCKS</h4>
+                                <p>Learn how to be a product manager and how to face the interview process... ( <a href="">read more</a>)</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="single-box box3" data-aos="fade-up">
+                        <button class="btn btn-box">WhoAmI</button>
+                        <div class="box-details">
+                            <div class="box-images flex">
+                                <div class="">
+                                    <img src="assets/img/Activity.png" alt="">
+                                </div>
+                            </div>
+                            <div class="box-texts">
+                                <h4>ABOUT ME</h4>
+                                <p>I believe in empathizing with customers to solve their problems. I aspire. ...  ( <a href="">read more</a>)</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="single-box span-2 box4" data-aos="fade-up" data-aos-delay="300">
+                        <button class="btn btn-box">PODCAST</button>
+                        <div class="box-details">
+                            <div class="box-images flex flex-between">
+                                    <img src="assets/img/home/Group 23.png" alt="">
+                                
+                                    <img src="assets/img/home/Group 22.png" alt="">
+                            </div>
+                            <div class="box-texts">
+                                <h4>CASE STUDIES</h4>
+                                <p>If there’s anything on your mind, we’d love to hear from you... ( <a href="">read more</a>)</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="single-box span-3 box5" data-aos="fade-up">
+                        
+                        <div class="flex flex-between" style="width: 100%;">
+                            <div class="box-texts">
+                                <h4>BLOGS</h4>
+                                <p>Find inspiration has never been easier than it is now.</p>
+                                <a href="#" class="blog_btn">view more</a>
+                            </div>
+                            <div class="blog-img">
+                                <div class="img"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
-
-        <!-- <section class="sec_boxes">
-            <div class="container">
-                <div class="grid grid-boxes">
-                    <div class="single-box span-2">
-                        <button class="btn btn-box">CaseStudies</button>
-                        <div class="box-details">
-                            <h4>CASE STUDIES</h4>
-                            <p>Have a look on my caseStudies and process ... ( <a href="">read more</a>)</p>
-                        </div>
-                        <img src="assets/img/home/Rectangle 22.png" class="fixed-top" alt="">
-                        <img src="assets/img/home/Rectangle 23.png" class="fixed-bottom" alt="">
-                    </div>
-                    <!-- <div class="single-box">
-                        <button class="btn btn-box"></button>
-                    </div>
-                    <div class="single-box">
-                        <button class="btn btn-box"></button>
-                    </div>
-                    <div class="single-box span-2">
-                        <button class="btn btn-box"></button>
-                    </div>
-                    <div class="single-box span-3">
-                        <button class="btn btn-box"></button>
-                    </div> -->
-                </div>
-            </div>
-        </section> -->
 
         
 
