@@ -23,6 +23,7 @@ body{
     
     --text-64 : 54px ;
     --text-52 : 52px ;
+    --text-45 : 45px ;
     --text-40 : 40px ;
     --text-36 : 36px ;
     --text-32 : 32px ;
@@ -147,7 +148,7 @@ i{
 
 /*============================== END COMMON WORK ======================== */
 
-/*============================== DESIGN FOR NAVBAR STYLE ======================== */
+/*============================== NAVBAR LAYTOUT DESIGN ======================== */
 
 
 .header{
@@ -200,6 +201,25 @@ i{
     font-size: 14px;
     font-weight: 500;
 }
+.navbar-button .form-btn .nav-btn:hover .animation{
+    animation: bottle .5s linear 2;
+}
+
+@keyframes bottle{
+    0%{
+        transform: translateX(0);
+    }
+    40%{
+        transform: translateX(1px);
+    }
+    60%{
+        transform: translateX(-1px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
 .close_menu ,
 .show_menu{
     display: none;
@@ -217,7 +237,7 @@ i{
 
 
 
-/*============================ HERO SECTION DESIGN ==========================*/
+/*============================ HERO SECTION LAYTOUT DESIGN ==========================*/
 
 #hero{
     position: relative;
@@ -294,7 +314,7 @@ i{
     margin-top: 120px;
 }
 
-/*============================ RESPONSIVE DESIGN ==========================*/
+/*============================ CASE SECTION LAYTOUT DESIGN ==========================*/
 
 
 .CaseStudies{
@@ -376,7 +396,8 @@ i{
     font-size: var(--text-20);
     color:var(--clr-4E);
 }
-/*============================ RESPONSIVE DESIGN ==========================*/
+/*============================ CASE BOXES SECTION LAYTOUT DESIGN ==========================*/
+
 .sec_boxes{
     padding: 80px 0;
     overflow: hidden;
@@ -433,16 +454,16 @@ i{
 }
 
 .box-texts .blog_btn{
+    background: linear-gradient(93.54deg, #AF51C5 5.09%, #6E297E 91.93%);
     display: inline-block;
     padding:14px 35px;
-    background: linear-gradient(93.54deg, #AF51C5 5.09%, #6E297E 91.93%);
     border-radius: 5px;
     font-size: var(--text-14);
     color: var(--clr-F9);
     font-weight: 500;
     text-transform: uppercase;
     margin-top: 24px;
-    transition: 0.7s ;
+    transition: all 0.7s ;
 }
 .box-texts .blog_btn:hover{
     background: linear-gradient(93.54deg, #d864bb 5.09%, #592964 91.93%);
@@ -542,10 +563,145 @@ i{
     width: 324px;
 }
 
-/*============================ RESPONSIVE DESIGN ==========================*/
+/*============================ SUBSCRIBE SECTION LAYTOUT DESIGN ==========================*/
+
+.subscribe{
+    position: relative;
+    background: linear-gradient(180deg, #FFF2C5 0%, #FFFFFF 100%);
+    padding:50px 0 140px;
+    font-family: var(--Jakarta);
+
+}
+
+.subs_icon{
+    display: inline-flex !important;
+    width: 130px;
+    height: 130px;
+    background-color: var(--clr-FF);
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.subs_icon img{
+    width: 80px;
+    height: 105px;
+}
+
+.subs_details h2{
+    font-size: var(--text-36);
+    font-weight: 700;
+}
+
+.subs_details p{
+    font-size: var(--text-20);
+    color: var(--clr-4D);
+    margin-top: 10px;
+}
+
+.subs_form{
+    margin-top: 30px;
+}
+
+.subs_form .form-group input,
+.subs_form .form-group button{
+    font-family: var(--Jakarta);
+}
+
+.subs_form .form-group input{
+    width: 445px;
+    height: 45px;
+    outline: 0;
+    border: 2px solid var(--clr-4D);
+    border-radius: 8px;
+    padding-left: 16px;
+    color: #333;
+}
+
+.subs_form .form-group button{
+    height: 45px;
+    padding: 0 25px;
+    border-radius: 8px;
+    font-size: var(--text-16);
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+/*============================ WORKING SECTION LAYTOUT DESIGN ==========================*/
+
+.work_content{
+    position: relative;
+    background: linear-gradient(270.69deg, #EFF0F3 3%, rgba(239, 240, 243, 0) 91.62%);
+    height: 420px;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding-right: 20px;
+    overflow: visible;
+}
+
+.work_content .work-img{
+    transform: translatey(-62px);
+}
+
+.work_content .work-img img{
+    width:600px;
+    height: 550px;
+}
+
+.work_details h2{
+    font-size: var(--text-45);
+    font-weight: 600;
+}
+
+.work_details button{
+    padding: 16px 50px;
+    border-radius: 16px;
+    border-color: var(--clr-4D);
+    color: var(--clr-4D);
+    font-size: var(--text-18);
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 0;
+}
 
 
+/*============================ FOOTER SECTION LAYOUT DESIGN ==========================*/
+
+.footer{
+    padding:60px 0 20px;
+}
+
+.follow{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6px;
+    padding:10px 24px;
+    background-color: var(--clr-FDB);
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.follow span{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.links a{
+    display: inline-block;
+    margin:0 4px;
+}
+
+.links a img{
+    width: 60px;
+    height: auto;
+}
+
+.copyright p{
+    font-size: var(--text-14);
+}
+
 /*============================ RESPONSIVE DESIGN ==========================*/
+
 @media screen and (max-width: 1400px) {
     
     .img-content img{
@@ -557,7 +713,8 @@ i{
 
 @media screen and (max-width: 1200px) {
 
-    /*============================ SINGLE CASES DESIGN ==========================*/
+    /*============================ RESPONSIVE SINGLE CASES DESIGN ==========================*/
+
     .cases .single_case{
         grid-template-columns: 1fr 1fr;
         column-gap: 76px;
@@ -583,22 +740,26 @@ i{
         font-size: var(--text-16);
     }
 
-/*============================ BOXES SECTION DESIGN ==========================*/
+/*============================ RESPONSIVE CASE BOXES SECTION DESIGN ==========================*/
     .single-box{
         height: 302px;
     }
+
     .blog-img .img{
         width: 392px;
         height: 302px;
     }
+
     .box-img img{
         width: 150px;
         height: 225px;
     }
+
     .box-img .fixed-top{
         
         transform: translateY(-52px) translateX(-50px);
     }
+
     .box-img .fixed-bottom{
         transform: translateY(48px) translateX(-30px);
     }
@@ -606,6 +767,7 @@ i{
     .box-details .box-images{
         margin-bottom: 18px;
     }
+
     .box-details .box-images div{
         padding:18px;
     }
@@ -613,25 +775,42 @@ i{
     .box-texts h4{
         font-size: var(--text-18);
     }
+
     .box-texts p{
         margin-top: 12px;
     }
+
     .single-box .btn-box{
         top: 20px;
         left: 25px;
         padding: 14px 18px;
     }
+    /*============================ RESPONSIVE WORKING SECTION DESIGN ==========================*/
+
+    .work_content{
+        height: 380px;
+    }
+
+    .work_details h2{
+        font-size: var(--text-36);
+        font-weight: 600;
+    }
+
+    .work_content .work-img img{
+        width:550px;
+        height: 510px;
+    }
 }
 
 @media screen and (max-width: 1080px) {
 
-/*============================ NAVBAR DESIGN ==========================*/
+/*============================ RESPONSIVE NAVBAR DESIGN ==========================*/
 
     .navbar_main-menu ul li a{
         font-size: var(--text-14);
     }
 
-/*============================ HERO DESIGN ==========================*/
+/*============================ RESPONSIVE HERO SECTION DESIGN ==========================*/
 
     .hero_btn{
         width:200px;
@@ -653,23 +832,27 @@ i{
         padding:10px 15px;
     }
 
-/*============================ BOXES SECTION DESIGN ==========================*/
+/*============================ RESPONSIVE BOXES SECTION DESIGN ==========================*/
 
     .box-img img{
         width: 100px;
         height: 180px;
     }
+
     .box-img .fixed-top{
         
         transform: translateY(-102px) translateX(-25px);
     }
+
     .box-img .fixed-bottom{
         transform: translateY(47px) translateX(0px);
     }
+
     .single-box{
         height: 290px;
         padding: 20px;
     }
+
     .box-details .box-images div img {
         width:37px;
         height: 37px;
@@ -678,7 +861,7 @@ i{
 
 @media screen and (max-width: 992px) {
 
-/*============================ NAVBAR DESIGN ==========================*/
+/*============================ RESPONSIVE NAVBAR DESIGN ==========================*/
 
     .navbar_main-menu{
         position: fixed;
@@ -695,26 +878,30 @@ i{
         transition: .5s;
         z-index: 999;
     }
+
     .navbar_main-menu ul{
         flex-direction: column;
         row-gap: 15px;
         align-items: flex-start !important;
     }
+
     .navbar_main-menu  .close_menu{
         position: absolute;
         top:20px;
         left:30px;
     }
+
     .close_menu ,
     .show_menu{
         display: inline-block;
     }
 
-/*============================ HERO DESIGN ==========================*/
+/*============================ RESPONSIVE HERO DESIGN ==========================*/
     
     .hero_title{
         font-size: var(--text-36);
     }
+
     .hero_btn{
         width:160px;
         height: 45px;
@@ -726,6 +913,7 @@ i{
         width:310px;
         height: auto;
     }
+
     .img-content .btn{
         top:60px;
         right: 20px;
@@ -733,12 +921,13 @@ i{
         font-size: var(--text-14);
 
     }
+
     .img-content .design_btn{
         margin-top: 80px;
         right: 8px;
     }
 
-    /*============================ SINGLE CASES DESIGN ==========================*/
+    /*============================ RESPONSIVE SINGLE CASES DESIGN ==========================*/
     .blog-img .img{
         width: 374px;
         height: 288px;
@@ -768,11 +957,45 @@ i{
         width: 245px;
     }
     
+    /*============================ RESPONSIVE SUBSCRIPTION SECTION DESIGN ==========================*/
+
+    .subs_details h2{
+        font-size: var(--text-28);
+    }
+
+    .subs_details p{
+        font-size: var(--text-16);
+    }
+    
+    .subs_form .form-group input{
+        width: 380px;
+        height: 45px;
+    }
+    
+    /*============================ RESPONSIVE WORKING SECTION DESIGN ==========================*/
+    .work_content{
+        height: 330px;
+    }
+
+    .work_details h2{
+        font-size: var(--text-28);
+    }
+
+    .work_content .work-img img{
+        width: 480px;
+        height: 460px;
+    }
+
+    .work_details button{
+        padding: 14px 40px;
+        margin-top: 20px;
+    }
+    
 }
 
 @media screen and (max-width: 767px) {
 
-/*============================ NAVBAR DESIGN ==========================*/
+/*============================ RESPONSIVE NAVBAR DESIGN ==========================*/
 
     .navbar-button .form-btn .nav-btn{
         padding: 7px 10px;
@@ -782,7 +1005,7 @@ i{
         margin-left: 8px;
     }
 
-    /*============================ HERO SECTION DESIGN ==========================*/
+    /*============================ RESPONSIVE HERO SECTION DESIGN ==========================*/
 
     #hero{
         padding:40px;
@@ -797,7 +1020,7 @@ i{
         text-align: center;
     }
     
-    /*============================ SINGLE CASES DESIGN ==========================*/
+    /*============================ RESPONSIVE SINGLE CASES SECTION DESIGN ==========================*/
     .CaseStudies{
         
         padding:40px 0;
@@ -825,39 +1048,66 @@ i{
         margin: 10px 0;
     }
 
-/*============================ SINGLE BOXES DESIGN ==========================*/
+/*============================ RESPONSIVE CASE BOXES SECTION DESIGN ==========================*/
 
     .sec_boxes{
         padding: 40px 0;
     }
+
     .grid-boxes{
         grid-template-columns: repeat(1,1fr);
         gap: 0px;
         row-gap: 20px;
     }
+
     .single-box{
         padding:30px;
         height: 242px;
         grid-column: span 2;
     }
+
     .blog-img .img{
         display: none;
     }
+
     .box-img img{
         width: 100px;
         height: 140px;
     }
+
     .box-img .fixed-bottom{
         transform: translateY(34px) translateX(0px);
     }
+
     .box-texts p{
         font-size: var(--text-14);
     }
+
+    /*============================ RESPONSIVE WORKING SECTION DESIGN ==========================*/
+    .work_content{
+        height: 250px;
+    }
+
+    .work_details h2{
+        font-size: var(--text-20);
+    }
+
+    .work_content .work-img img{
+        width: 360px;
+        height: 380px;
+    }
+
+    .work_details button{
+        padding: 14px 40px;
+        margin-top: 20px;
+        font-size: var(--text-14);
+    }
+
 }
 
 @media screen and (max-width: 575px) {
 
-/*============================ NAVBAR DESIGN ==========================*/
+/*============================ RESPONSIVE NAVBAR DESIGN ==========================*/
 
     .navbar-button .form-btn .nav-btn{
         padding: 5px 8px;
@@ -867,91 +1117,144 @@ i{
         width:80%;
     }
 
-    /*============================ HERO SECTION DESIGN ==========================*/
+    /*============================ RESPONSIVE HERO SECTION DESIGN ==========================*/
 
     .hero_title{
         font-size: var(--text-24);
     }
 
-    /*============================ SINGLE CASES DESIGN ==========================*/
+    /*============================ RESPONSIVE SINGLE CASES DESIGN ==========================*/
 
     .cases .single_case{
         height: 185px;
     }
+
     .case_picture .pictures{
         width: 250px;
         height: 185px;
     }
+
     .case_picture .picture2{
         width: 244px;
         height: 144px;
     }
+
     .single-box .btn-box{
         top: 15px;
         left: 15px;
         padding: 10px 15px;
         font-size: var(--text-12);
     }
+
     .box-texts h4{
         font-size: var(--text-16);
     }
+
     .box-texts p {
         margin-top: 8px;
     }
 
+    /*============================ RESPONSIVE SUBSCRIPTION SECTION DESIGN ==========================*/
+
+    .subs_details h2{
+        font-size: var(--text-24);
+    }
+
+    .subs_details p{
+        font-size: var(--text-14);
+    }
+    
+    .subs_form .form-group input{
+        width: 270px;
+        height: 45px;
+    }
+
+    .subs_form .form-group button{
+        padding: 0 20px;
+        font-size: var(--text-14);
+    }
+
+    .work_content{
+        margin: 0;
+        border-radius: 0;
+        text-align: center;
+        padding: 0 40px;
+    }
+
+    .work-img{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 480px){
 
-    /*============================ HERO SECTION DESIGN ==========================*/
+    /*============================ RESPONSIVE HERO SECTION DESIGN ==========================*/
 
     .img-content img{
         width:250px;
         height: auto;
     }
+
     .img-content .btn{
         top:35px;
         right: -12px;
     }
+
     .hero_title{
         font-size: var(--text-20);
     }
+
     .btn-group{
         flex-direction: column;
         row-gap: 12px;
         align-items: start;
     }
+
     .btn_bdr{
         margin-left: 0;
     }
 
-    /*============================ SINGLE CASES DESIGN ==========================*/
+    /*============================ RESPONSIVE SINGLE CASES DESIGN ==========================*/
 
     .cases .single_case{
         grid-template-columns: 1fr;
         padding:30px;
     }
+
     .case_picture .pictures{
         display: none;
     }
     
- /*============================ SINGLE BOXES DESIGN ==========================*/
+ /*============================ RESPONSIVE SINGLE BOXES DESIGN ==========================*/
     .single-box {
         height: 200px;
     }
+
     .single-box img{
        display: none;
     }
+
     .single-box .btn-box{
         top: 20px;
         left: 20px;
         padding: 14px 18px;
         font-size: var(--text-12);
     }
+
     .box-details .box-images div{
         background-color: transparent;
         padding:0;
 
     }
+
+    /*============================ RESPONSIVE SUBSCRIPTION SECTION DESIGN ==========================*/
+
+    .subs_details h2{
+        font-size: var(--text-20);
+    }
     
+    .subs_form .form-group input,
+    .subs_form .form-group button{
+        margin-top: 10px;
+    }
 }
