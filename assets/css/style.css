@@ -120,7 +120,7 @@ i{
 
 .section{
     position: relative;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .py-3{
@@ -228,6 +228,8 @@ i{
     display: flex;
     align-items: flex-end;
     padding-left: 48px;
+    overflow: hidden !important;
+
 }
 
 .hero-content{
@@ -377,6 +379,7 @@ i{
 /*============================ RESPONSIVE DESIGN ==========================*/
 .sec_boxes{
     padding: 80px 0;
+    overflow: hidden;
 }
 .grid-boxes{
     grid-template-columns: repeat(3,1fr);
@@ -442,7 +445,6 @@ i{
     transition: 0.7s ;
 }
 .box-texts .blog_btn:hover{
-    transition: 0.7s ;
     background: linear-gradient(93.54deg, #d864bb 5.09%, #592964 91.93%);
 }
 .box-details{
@@ -539,6 +541,10 @@ i{
 .box-images img:last-child{
     width: 324px;
 }
+
+/*============================ RESPONSIVE DESIGN ==========================*/
+
+
 /*============================ RESPONSIVE DESIGN ==========================*/
 @media screen and (max-width: 1400px) {
     
@@ -548,6 +554,7 @@ i{
     }
 
 }
+
 @media screen and (max-width: 1200px) {
 
     /*============================ SINGLE CASES DESIGN ==========================*/
@@ -847,6 +854,7 @@ i{
         font-size: var(--text-14);
     }
 }
+
 @media screen and (max-width: 575px) {
 
 /*============================ NAVBAR DESIGN ==========================*/
