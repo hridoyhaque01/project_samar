@@ -37,12 +37,12 @@
                                     <i class='bx bx-x'></i>
                                 </div>
                                 <ul class="flex">
-                                    <li><a class="active" href="index.html">Home</a></li>
+                                    <li><a href="index.html">Home</a></li>
                                     <li><a href="#">AboutMe</a></li>
                                     <li><a href="#">Gallery</a></li>
                                     <li><a href="#">Projects</a></li>
                                     <li><a href="#">caseStudies</a></li>
-                                    <li><a href="blog.html">Blogs</a></li>
+                                    <li><a class="active" href="#">Blogs</a></li>
                                     <li><a href="#">Podcast</a></li>
                                 </ul>
                             </div>
@@ -72,14 +72,16 @@
         <!--==================================== HERO SECTION STRUCTURE LAYOUT ================================= -->
 
         <section id="hero">
-                <div class="hero-content grid">
+                <div class="hero-content grid blog_content">
+                    <button class="night_vision btn vision">
+                        <img src="assets/img/blog/dark.png" alt="">
+                    </button>
+                    <button class="light_vision btn vision">
+                        <img src="assets/img/blog/light.png" alt="">
+                    </button>
                     <div class="hero-details" data-aos="fade-right" >
-                        <button class="btn hello_btn">
-                            👋 Hello All
-                        </button>
-                        <h1 class="hero_title" style="margin:24px 0;">I’m Samarjit,
-                            A Problem solver
-                            and a Storyteller</h1>
+                        
+                        <h1 class="hero_title" style="margin:24px 0;">An Innovative newsletter for Indian Students</h1>
                             <div class="btn-group flex">
                                 <button class="btn hero_btn btn-yellow flex">
                                     <span style="margin-right: 6px;">About me</span>
@@ -91,163 +93,96 @@
                             </div>
                     </div>
                     <div class="hero_img-contents" data-aos="fade-left" data-aos-delay="300">
-                        <div class="img-content">
-                            <img src="assets/img/home/12 1.png" alt="">
+                        <div class="img-content ">
+                            <img src="assets/img/blog/Rectangle 9996.png" class="blog_vector" alt="">
                             <div class="back-img">
-                                <img src="assets/img/home/Ellipse 1.png" alt="">
-                            </div>
-                            <span class="btn tech_btn">
-                                🔔 TECH
-                            </span>
-                            <span class="btn design_btn">
-                                🎨  DESIGN
-                            </span>
-                        </div>
-                    </div>
-                </div>
-        </section>
-
-        <!--==================================== CASES SECTION STRUCTURE LAYOUT ================================= -->
-
-        <section class="CaseStudies">
-            <div class="container">
-                <div class="case_title" data-aos="fade-up">
-                    <h2>My Recent CaseStudies</h2>
-                    <a href="#" class="flex">see all <i class='bx bx-right-arrow-alt'></i></a>
-                </div>
-
-                <div class="cases ">
-                    <div class="single_case grid" data-aos="fade-up">
-                        <div class="case_details">
-                            <h3>Sheepify States</h3>
-                            <p>Designed some empty state screens in kawaii style for the popular sheepify app </p>
-                            <a href="">View Case Study</a>
-                        </div>
-                        <div class="case_picture">
-                            <div class="pictures picture1"></div>
-                        </div>
-                    </div>
-                    <div class="single_case grid HoneyBunny" data-aos="fade-up">
-                        <div class="case_details">
-                            <h3>HoneyBunny</h3>
-                            <p>A colorful dashboard to manage your fictional projects and team, all in a single place.</p>
-                            <a href="">View Case Study</a>
-                        </div>
-                        <div class="case_picture">
-                            <div class="pictures picture2"></div>
-                        </div>
-                    </div>
-                    <div class="single_case grid" data-aos="fade-up">
-                        <div class="case_details">
-                            <h3>Memrise Redesign</h3>
-                            <p>I redesigned the popular language learning app memrise in kawaii style to make it more cute.</p>
-                            <a href="">View Case Study</a>
-                        </div>
-                        <div class="case_picture">
-                            <div class="pictures picture3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--==================================== CASE BOXES SECTION STRACTURE LAYOUT ================================= -->
-
-
-        <section class="sec_boxes">
-            <div class="container">
-                <div class="grid grid-boxes">
-
-
-                    <div class="single-box span-2 box1" data-aos="fade-right">
-                        <div class="grid_single-box">
-                            <button class="btn btn-box">CaseStudies</button>
-                            <div class="box-details">
-                                <div class="box-texts">
-                                    <h4>CASE STUDIES</h4>
-                                    <p>Have a look on my caseStudies and process ... ( <a href="">read more</a>)</p>
-                                </div>
-                            </div>
-                            <div class="box-img flex">
-                                <img src="assets/img/home/Rectangle 22.png" class="fixed-top" alt="">
-                                <img src="assets/img/home/Rectangle 23.png" class="fixed-bottom" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="single-box p-4 box2" data-aos="fade-up">
-                        <button class="btn btn-box">Tips & Trick</button>
-                        <div class="box-details">
-                            <div class="box-images flex">
-                                <div class="small">
-                                    <img src="assets/img/Time Square.png" alt="">
-                                </div>
-                                <div class="large">
-                                    <img src="assets/img/Time Square.png" alt="">
-                                </div>
-                                <div class="small">
-                                    <img src="assets/img/Time Square.png" alt="">
-                                </div>
-                            </div>
-                            <div class="box-texts">
-                                <h4>PM MOCKS</h4>
-                                <p>Learn how to be a product manager and how to face the interview process... ( <a href="">read more</a>)</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="single-box box3" data-aos="fade-up">
-                        <button class="btn btn-box">WhoAmI</button>
-                        <div class="box-details">
-                            <div class="box-images flex">
-                                <div class="">
-                                    <img src="assets/img/Activity.png" alt="">
-                                </div>
-                            </div>
-                            <div class="box-texts">
-                                <h4>ABOUT ME</h4>
-                                <p>I believe in empathizing with customers to solve their problems. I aspire. ...  ( <a href="">read more</a>)</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="single-box span-2 box4" data-aos="fade-left" data-aos-delay="300">
-                        <button class="btn btn-box">PODCAST</button>
-                        <div class="box-details">
-                            <div class="box-images flex flex-between">
-                                    <img src="assets/img/home/Group 23.png" alt="">
-                                
-                                    <img src="assets/img/home/Group 22.png" alt="">
-                            </div>
-                            <div class="box-texts">
-                                <h4>CASE STUDIES</h4>
-                                <p>If there’s anything on your mind, we’d love to hear from you... ( <a href="">read more</a>)</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="single-box span-3 box5" data-aos="fade-up">
-                        
-                        <div class="flex flex-between" style="width: 100%;">
-                            <div class="box-texts">
-                                <h4>BLOGS</h4>
-                                <p>Find inspiration has never been easier than it is now.</p>
-                                <a href="#" class="blog_btn">view more</a>
-                            </div>
-                            <div class="blog-img">
-                                <div class="img"></div>
+                                <img src="assets/img/blog/Ellipse 2.png" alt="">
                             </div>
                             
                         </div>
                     </div>
+                </div>
+        </section>
 
+        <!--==================================== BLOG SECTION STRACTURE LAYOUT ================================= -->
+
+        <section id="blogs">
+            <div class="container">
+                <div class="layout_grids">
+                    <button class="btn">
+                        <img src="assets/img/blog/Vector.png" alt="">
+                    </button>
+                    <button class="btn">
+                        <img src="assets/img/blog/Vector (1).png" alt="">
+                    </button>
+                </div>
+                <div class="grid blogs_content blogH">
+                    <div class="span-2 single_content">
+                        <div>
+                            <img src="assets/img/blog/img-1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="blog_details">
+                            <h3>Understanding the Gatsby lifecycle</h3>
+                            <p>At Narative, we’ve been fans of Gatsby from day one, using it to build performant and flexible products for both clients and ourselves. With th...</p>
+                            <a href="#"> June 14th  ·  15min read</a>
+                        </div>
+                    </div>
+                    <div class="single_content">
+                        <div>
+                            <img src="assets/img/blog/img.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="blog_details">
+                            <h3>Why we built a company before building a product</h3>
+                            <p>At Narative, we’ve been fans of Gatsby from day one, using it to build performant and flexible products for both clients and ourselves. With th...</p>
+                            <a href="#"> June 14th  ·  15min read</a>
+                        </div>
+                    </div>
+                    <div class="single_content">
+                        <div>
+                            <img src="assets/img/blog/img-3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="blog_details">
+                            <h3>Building the new Hopper.com</h3>
+                            <p>Creating a new website for Hopper, one of the top 4 most downloaded travel apps in the U.S, along with Uber, Ly...</p>
+                            <a href="#"> June 14th  ·  15min read</a>
+                        </div>
+                    </div>
+                    <div class=" span-2 single_content">
+                        <div>
+                            <img src="assets/img/blog/img-2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="blog_details">
+                            <h3>How Figma changed the way we design</h3>
+                            <p>To understand why Figma is the best design tool for our company, you have to understand what we do. As a designer, I’v...</p>
+                            <a href="#"> June 14th  ·  15min read</a>
+                        </div>
+                    </div>
+                    <div class="span-2 single_content">
+                        <div>
+                            <img src="assets/img/blog/img-4.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="blog_details">
+                            <h3>Why Narative loves Gatsby</h3>
+                            <p>To understand why we love Gatsby you have to understand what we do at Narative. Narative is a digital studio that focuses on...</p>
+                            <a href="#"> June 14th  ·  15min read</a>
+                        </div>
+                    </div>
+                    <div class="single_content">
+                        <div>
+                            <img src="assets/img/blog/img-5.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="blog_details">
+                            <h3>Building Hopper’s Media Centre</h3>
+                            <p>Creating a new website for Hopper, one of the top 4 most downloaded travel apps in the U.S, along with Uber, Ly...</p>
+                            <a href="#"> June 14th  ·  15min read</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        
+
+
+
         <!--==================================== SUBSCRIPTION SECTION STRACTURE LAYOUT ================================= -->
 
         <section class="subscribe">
@@ -267,7 +202,9 @@
                 </form>
             </div>
         </section>
+
         <!--==================================== WORKING SECTION STRACTURE LAYOUT ================================= -->
+        
         <section class="working">
             <div class="work_content flex">
                 <div class="work-img">
@@ -281,9 +218,11 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <!--==================================== FOOTER SECTION STRACTURE LAYOUT ================================= -->
+    </main>
+   
+   
+   <!--==================================== FOOTER SECTION STRACTURE LAYOUT ================================= -->
 
     <footer class="footer" style="text-align: center;">
         <div class="container">

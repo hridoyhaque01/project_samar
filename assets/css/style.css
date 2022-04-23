@@ -96,7 +96,12 @@ i{
 .grid{
     display: grid;
 }
-
+.span-2{
+    grid-column: span 2;
+}
+.span-3{
+    grid-column: span 3;
+}
 .img-fluid{
     width: 100%;
     height: auto;
@@ -242,7 +247,7 @@ i{
 #hero{
     position: relative;
     min-width:100%;
-    padding-top: 40px;
+    padding-top: 60px;
     background: linear-gradient(180deg, #FFF2C5 0%, rgba(250, 250, 250, 0) 100%);
     backdrop-filter: blur(250px);
     display: flex;
@@ -253,12 +258,23 @@ i{
 }
 
 .hero-content{
+    position: relative;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
     justify-content: space-between;
     align-items: center;
 }
-
+.hero-content .vision{
+    position: absolute;
+    top:0;
+    right:60px;
+    display: inline-block;
+    background-color: transparent;
+    z-index: 99;
+}
+.light_vision{
+    display: none !important;
+}
 .hero-details .hello_btn{
     padding:12px 24px;
     border-radius: 10px;
@@ -283,13 +299,17 @@ i{
     margin-left: 20px;
 }
 .hero_img-contents{
+    position: relative;
     text-align: right;
 }
 .hero_img-contents .img-content{
     display: inline-block;
     position: relative;
 }
-
+.img-content img{
+    width:500px;
+    height: auto;
+}
 .img-content .back-img{
     display: inline-block;
     position: absolute;
@@ -312,6 +332,27 @@ i{
 .img-content .design_btn{
     right:10px;
     margin-top: 120px;
+}
+
+/*============================ BLOG IMAGE CHANGES ==========================*/
+.blog_content .hero_img-contents{
+    height: 460px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.blog_content .img-content img{
+    width:620px;
+    height: auto;
+}
+.blog_content .img-content .back-img img{
+    width:360px;
+    height: auto;
+    object-fit: cover;
+}
+.blog_content .img-content .back-img{
+    top:-55px;
+    right:155px;
 }
 
 /*============================ CASE SECTION LAYTOUT DESIGN ==========================*/
@@ -431,12 +472,7 @@ i{
 .box5{
     background: linear-gradient(180deg, #DDD6FE 0%, #A78BFA 100%);
 }
-.span-2{
-    grid-column: span 2;
-}
-.span-3{
-    grid-column: span 3;
-}
+
 
 .grid_single-box {
     width:100%;
@@ -700,16 +736,13 @@ i{
     font-size: var(--text-14);
 }
 
-/*============================ RESPONSIVE DESIGN ==========================*/
-
-@media screen and (max-width: 1400px) {
-    
-    .img-content img{
-        width:500px;
-        height: auto;
-    }
-
+/*============================ BLOG SECTION LAYOUT DESIGN ==========================*/
+.blogs_content{
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+    row-gap: 30px;
 }
+/*============================ RESPONSIVE DESIGN ==========================*/
 
 @media screen and (max-width: 1200px) {
 
@@ -799,6 +832,22 @@ i{
     .work_content .work-img img{
         width:550px;
         height: 510px;
+    }
+
+    /*============================ RESPONSIVE BLOG HERO SECTION DESIGN ==========================*/
+
+    .blog_content .img-content img{
+        width: 525px;
+        height: auto;
+    }
+    .blog_content .img-content .back-img img{
+        width:310px;
+        height: auto;
+        object-fit: cover;
+    }
+    .blog_content .img-content .back-img{
+        top:-65px;
+        right:130px;
     }
 }
 
@@ -990,7 +1039,24 @@ i{
         padding: 14px 40px;
         margin-top: 20px;
     }
-    
+    /*============================ RESPONSIVE BLOG HERO SECTION DESIGN ==========================*/
+    .blog_content .hero_img-contents{
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .blog_content .img-content img{
+        width: 355px;
+        height: auto;
+    }
+    .blog_content .img-content .back-img{
+        top: -50px;
+        right: 65px;
+    }
+    .blog_content .img-content .back-img img{
+        width:245px;
+       
+    }
+  
 }
 
 @media screen and (max-width: 767px) {
@@ -1103,6 +1169,21 @@ i{
         font-size: var(--text-14);
     }
 
+    /*============================ RESPONSIVE BLOG HERO SECTION DESIGN ==========================*/
+
+    .blog_content .hero_img-contents{
+        height: 320px;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog_content .img-content img{
+        width: 395px;
+    }
+    .blog_content .img-content .back-img{
+        top: -50px;
+        right: 85px;
+    }
+   
 }
 
 @media screen and (max-width: 575px) {
@@ -1256,5 +1337,23 @@ i{
     .subs_form .form-group input,
     .subs_form .form-group button{
         margin-top: 10px;
+    }
+
+    /*============================ RESPONSIVE BLOG HERO SECTION DESIGN ==========================*/
+    .hero-content .vision{
+        right:20px;
+    }
+    .blog_content .hero_img-contents{
+        height: 225px;
+    }
+    .blog_content .img-content img{
+        width: 280px;
+    }
+    .blog_content .img-content .back-img{
+        top: -40px;
+        right: 45px;
+    }
+    .blog_content .img-content .back-img img{
+        width:200px;
     }
 }
