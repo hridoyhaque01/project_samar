@@ -165,6 +165,7 @@ i{
     font-size: var(--text-24);
     color:var(--clr-FF);
 }
+
 /*============================== END COMMON WORK ======================== */
 
 /*============================== NAVBAR LAYTOUT DESIGN ======================== */
@@ -750,7 +751,7 @@ i{
     padding:20px 80px 20px 0;
 }
 
-.single_content .blog_details h3{
+.single_content .blog_details h3 a{
     font-family: var(--Merriweather);
     font-size: var(--text-24);
     font-weight: 700;
@@ -824,6 +825,7 @@ i{
 
 
 /*======BLOG LIST CONTENT DESIGN=======*/
+
 #blogs .list .single_content{
     display: grid;
     width: 100%;
@@ -842,8 +844,28 @@ i{
     grid-column: span 2;
 }
 
+/*====== BLOG POST CONTENT DESIGN=======*/
 
-
+.post_title{
+    padding:120px 310px 10px;
+    text-align: center;
+}
+.post_title h2{
+    font-family: var(--Merriweather);
+    font-size: var(--text-45);
+    font-weight: 700;
+    line-height: 60px;
+    color:var(--clr-00);
+}
+.post_title a{
+    display: inline-flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size:var(--text-16);
+    color:var(--clr-73);
+    font-family:var(--Playfair);
+    margin-top: 20px;
+}
 /*============================ FOOTER SECTION LAYOUT DESIGN ==========================*/
 
 .footer{

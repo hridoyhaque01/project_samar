@@ -43,6 +43,39 @@ fixed_btn.addEventListener('click',()=>{
 window.addEventListener('scroll', ActiveButton)
 window.addEventListener('load', ActiveButton)
 
+/*================= BLOG SECTION GRID AND LIST MENU ==================*/
+
+/* VERIABLE DELIARTION */
+
+  const grid = document.getElementById('grid'),
+  list = document.getElementById('list'),
+  contentView = document.getElementById('Blogview')
+
+  function gridActive(){
+
+    if(contentView && contentView.classList.contains('list')){
+      grid.classList.add('active')
+      list.classList.remove('active')
+      contentView.className = 'blogs_content blogH';
+    }
+
+  }
+
+  function listActive(){
+    if(contentView && contentView.classList.contains('blogH')){
+      grid.classList.remove('active')
+      list.classList.add('active')
+      contentView.className = 'blogs_content list';
+    }
+  }
+
+  if(grid){
+    grid.addEventListener('click' , gridActive)
+  }
+  if(list){
+    list.addEventListener('click' , listActive)
+  }
+
 /*=================DATA AOS / SCROLL ANIMATION======================== */
  
 function aos_init() {
@@ -58,29 +91,3 @@ function aos_init() {
   });
 
 
-/*================= BLOG SECTION GRID AND LIST MENU ==================*/
-
-/* VERIABLE DELIARTION */
-
-  const grid = document.getElementById('grid'),
-      list = document.getElementById('list'),
-      contentView = document.getElementById('Blogview')
-function gridActive(){
-
-  if(contentView && contentView.classList.contains('list')){
-    grid.classList.add('active')
-    list.classList.remove('active')
-    contentView.className = 'blogs_content blogH';
-  }
-
-}
-function listActive(){
-  if(contentView && contentView.classList.contains('blogH')){
-    grid.classList.remove('active')
-    list.classList.add('active')
-    contentView.className = 'blogs_content list';
-  }
-}
-
-grid.addEventListener('click' , gridActive)
-list.addEventListener('click' , listActive)
