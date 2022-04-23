@@ -66,6 +66,7 @@ body{
     --clr-B4 : #B49467;
     --clr-74 : #746FA7;
     --clr-9E : #9E69AA;
+    --clr-rgba1 : rgba(8, 8, 11, 0.15); 
 
 /*============================== FONT FAMILY ======================== */
 
@@ -104,7 +105,7 @@ i{
 }
 .img-fluid{
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .hero_title{
@@ -150,7 +151,20 @@ i{
     background-color: var(--clr-FC);
     color: var(--clr-FF);
 }
-
+.fixed_btn{
+    position: fixed;
+    bottom: 40px;
+    right:40px;
+    padding:10px;
+    background-color:var(--clr-64);
+    border-radius: 3px;
+    transition: .5s;
+    display: none;
+}
+.fixed_btn i{
+    font-size: var(--text-24);
+    color:var(--clr-FF);
+}
 /*============================== END COMMON WORK ======================== */
 
 /*============================== NAVBAR LAYTOUT DESIGN ======================== */
@@ -700,6 +714,136 @@ i{
 }
 
 
+/*============================ BLOG SECTION LAYOUT DESIGN ==========================*/
+#blogs{
+    padding:30px 0;
+    background-color:whitesmoke;
+    overflow: hidden;
+}
+
+.layout_grids{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 34px;
+    margin-bottom: 45px;
+}
+
+.layout_grids button{
+    padding:6px;
+    border-radius: 50%;
+}
+
+.layout_grids button i{
+    font-size: var(--text-32);
+    color:var(--clr-80);
+    transition: .3s;
+
+}
+
+.layout_grids button.active i,
+.layout_grids button:hover i{
+    color:var(--clr-07);
+}
+
+.single_content .blog_details{
+    padding:20px 80px 20px 0;
+}
+
+.single_content .blog_details h3{
+    font-family: var(--Merriweather);
+    font-size: var(--text-24);
+    font-weight: 700;
+    line-height: 30px;
+    color:var(--clr-08);
+}
+
+.single_content .blog_details p,
+.single_content .blog_details a
+{
+    font-family: var(--Playfair);
+    font-size: var(--text-16);
+    line-height: 24px;
+    color:var(--clr-73);
+}
+
+.single_content .blog_details p{
+    margin:10px 0;
+}
+
+.single_content .blog_details a{
+    color: var(--clr-rgba1);
+    transition: .3s;
+    word-spacing:5px;
+}
+
+.single_content .blog_details a:hover{
+    color:var(--clr-64);
+}
+
+.pagination li a{
+    color:var(--clr-73);
+    transition: .3s;
+}
+
+.pagination li a:hover,
+.pagination li a.active{
+    color:var(--clr-00);
+}
+
+.pagination li.disabled{
+    cursor:default;
+    color:var(--clr-80);
+}
+
+/*======BLOG LIST CONTENT DESIGN=======*/
+
+.blogs_content.blogH{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 30px;
+}
+
+.blogs_content.blogH .h-3{
+    grid-column: span 3;
+}
+
+.blogs_content.blogH .h-2{
+    grid-column: span 2;
+}
+
+#blogs .blogH .content_img{
+    height: 280px;
+}
+
+#blogs .blogH .content_img img{
+    object-fit: cover;
+    background-position: center;
+}
+
+
+
+/*======BLOG LIST CONTENT DESIGN=======*/
+#blogs .list .single_content{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    column-gap: 80px;
+    margin: 30px 0;
+}
+
+.list .single_content .content_img{
+    height: 230px;
+    grid-column: span 2;
+}
+
+.list .single_content .blog_details{
+    grid-column: span 2;
+}
+
+
+
 /*============================ FOOTER SECTION LAYOUT DESIGN ==========================*/
 
 .footer{
@@ -736,12 +880,6 @@ i{
     font-size: var(--text-14);
 }
 
-/*============================ BLOG SECTION LAYOUT DESIGN ==========================*/
-.blogs_content{
-    grid-template-columns: repeat(3,1fr);
-    column-gap: 30px;
-    row-gap: 30px;
-}
 /*============================ RESPONSIVE DESIGN ==========================*/
 
 @media screen and (max-width: 1200px) {
@@ -759,16 +897,20 @@ i{
         height: 302px;
         
     }
+
     .case_picture .picture2{
         width: 430px;
         height: 265px;
     }
+
     .single_case h3{
         font-size: var(--text-24);
     }
+
     .single_case p{
         font-size: var(--text-16);
     }
+
     .single_case a{
         font-size: var(--text-16);
     }
@@ -840,11 +982,13 @@ i{
         width: 525px;
         height: auto;
     }
+
     .blog_content .img-content .back-img img{
         width:310px;
         height: auto;
         object-fit: cover;
     }
+
     .blog_content .img-content .back-img{
         top:-65px;
         right:130px;
@@ -981,27 +1125,34 @@ i{
         width: 374px;
         height: 288px;
     }
+
     .cases .single_case{
         height: 260px;
     }
+
     .case_picture .pictures{
         width: 373px;
         height: 260px;
         
     }
+
     .case_picture .picture2{
         width: 364px;
         height: 230px;
     }
+
     .box-texts p{
         font-size: var(--text-12);
     }
+
     .box-images {
         margin-top: 10px;
     }
+
     .box-images img:first-child{
         width: 110px;
     }
+
     .box-images img:last-child{
         width: 245px;
     }
@@ -1040,22 +1191,62 @@ i{
         margin-top: 20px;
     }
     /*============================ RESPONSIVE BLOG HERO SECTION DESIGN ==========================*/
+    .blog_content .hero_img-contents {
+        height: 320px;
+    }
+
     .blog_content .hero_img-contents{
         justify-content: flex-end;
         align-items: center;
     }
+
     .blog_content .img-content img{
         width: 355px;
         height: auto;
     }
+
     .blog_content .img-content .back-img{
         top: -50px;
         right: 65px;
     }
+
     .blog_content .img-content .back-img img{
         width:245px;
        
     }
+
+    .single_content .blog_details{
+        padding:20px 0 20px ;
+    }
+
+    /********main blog section*****/
+
+    #blogs .blogH .content_img{
+        height: 240px;
+    }
+
+    .single_content .blog_details h3{
+        font-size: var(--text-18);
+        line-height: 26px;
+    }
+
+    .single_content .blog_details p,
+    .single_content .blog_details a
+    {
+        font-size: var(--text-14);
+        line-height: 20px;
+    }
+
+    /*list blog*/
+
+    #blogs .list .single_content{
+        column-gap: 40px;
+    }
+
+    .list .single_content .content_img{
+        height: 180px;
+    }
+   
   
 }
 
@@ -1091,25 +1282,31 @@ i{
         
         padding:40px 0;
     }
+
     .cases .single_case{
         height: 225px;
         padding-left: 40px;
     }
+
     .case_picture .pictures{
         width: 306px;
         height: 225px;
     }
+
     .case_picture .picture2{
         width: 300px;
         height: 190px;
     }
+
     .single_case h3{
         font-size: var(--text-20);
     }
+
     .single_case p,
     .single_case a{
         font-size: var(--text-14);
     }
+
     .single_case p{
         margin: 10px 0;
     }
@@ -1176,14 +1373,61 @@ i{
         justify-content: center;
         align-items: center;
     }
+
     .blog_content .img-content img{
         width: 395px;
     }
+
     .blog_content .img-content .back-img{
         top: -50px;
         right: 85px;
     }
-   
+
+   /********main blog section*****/
+   .blogs_content.blogH{
+        gap:20px;
+    }
+
+    #blogs .blogH .content_img{
+        height: 140px;
+    }
+    .single_content .blog_details h3{
+        font-size: var(--text-16);
+        line-height: 26px;
+    }
+
+    .single_content .blog_details p,
+    .single_content .blog_details a
+    {
+        font-size: var(--text-14);
+        line-height: 20px;
+    }
+
+    .list .single_content .blog_details p{
+        margin: 0;
+    }
+
+    #blogs .list .single_content{
+        column-gap: 20px;
+    }
+
+    /*list blog*/
+
+    .list .single_content .content_img{
+        height: 140px;
+    }
+
+    .list .single_content .blog_details h3{
+        font-size: var(--text-14);
+        line-height: 26px;
+    }
+
+    .list .single_content .blog_details p,
+    .list .single_content .blog_details a
+    {
+        font-size: var(--text-12);
+    }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -1265,9 +1509,49 @@ i{
     .work-img{
         display: none;
     }
+
+    
+    /*====================== RESPONSIVE BLOGS SECTION DESIGN
+    ====================*/
+
+    /********main blog section*****/
+
+    .blogs_content.blogH{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .blogs_content.blogH .h-3,
+    .blogs_content.blogH .h-2{
+        grid-column: span 1;
+    }
+
+    #blogs .blogH .content_img{
+        height: 110px;
+    }
+
+    .single_content .blog_details h3{
+        font-size: var(--text-14);
+        line-height: 20px;
+    }
+
+    .single_content .blog_details p,
+    .single_content .blog_details a
+    {
+        font-size: var(--text-12);
+        line-height: 20px;
+    }
+
+    /*list blog*/
+
+    .list .single_content .blog_details h3{
+        font-size: var(--text-12);
+        line-height: 26px;
+    }
+    
 }
 
 @media screen and (max-width: 480px){
+
 
     /*============================ RESPONSIVE HERO SECTION DESIGN ==========================*/
 
@@ -1343,17 +1627,28 @@ i{
     .hero-content .vision{
         right:20px;
     }
+
     .blog_content .hero_img-contents{
         height: 225px;
     }
+
     .blog_content .img-content img{
         width: 280px;
     }
+
     .blog_content .img-content .back-img{
         top: -40px;
         right: 45px;
     }
+
     .blog_content .img-content .back-img img{
         width:200px;
+    }
+    
+    /*list blog*/
+
+    #blogs .list .single_content{
+        grid-template-columns: repeat(1,1fr);
+        margin:10px 0;
     }
 }

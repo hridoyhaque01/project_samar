@@ -1,3 +1,4 @@
+
 /*=================NAVBAR SHOW MENU ==================*/
 
 const content = document.querySelector('.navbar-content'),
@@ -18,10 +19,33 @@ closeMenu.addEventListener('click',()=>{
 })
 
 
-/**
-   * Animation on scroll
-   */
- function aos_init() {
+
+
+
+/*================= FIXED BUTTON ======================== */
+const fixed_btn = document.querySelector('.fixed_btn')
+
+function ActiveButton(){
+  let scrollTop = window.scrollY
+  if(scrollTop >= 140){
+    fixed_btn.style.display = 'block'
+  }else{
+    fixed_btn.style.display = 'none'
+  }  
+}
+
+fixed_btn.addEventListener('click',()=>{
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+})
+
+
+window.addEventListener('scroll', ActiveButton)
+window.addEventListener('load', ActiveButton)
+
+/*=================DATA AOS / SCROLL ANIMATION======================== */
+ 
+function aos_init() {
     AOS.init({
       duration: 1000,
       easing: "ease-in-out",
@@ -32,3 +56,31 @@ closeMenu.addEventListener('click',()=>{
   window.addEventListener('load', () => {
     aos_init();
   });
+
+
+/*================= BLOG SECTION GRID AND LIST MENU ==================*/
+
+/* VERIABLE DELIARTION */
+
+  const grid = document.getElementById('grid'),
+      list = document.getElementById('list'),
+      contentView = document.getElementById('Blogview')
+function gridActive(){
+
+  if(contentView && contentView.classList.contains('list')){
+    grid.classList.add('active')
+    list.classList.remove('active')
+    contentView.className = 'blogs_content blogH';
+  }
+
+}
+function listActive(){
+  if(contentView && contentView.classList.contains('blogH')){
+    grid.classList.remove('active')
+    list.classList.add('active')
+    contentView.className = 'blogs_content list';
+  }
+}
+
+grid.addEventListener('click' , gridActive)
+list.addEventListener('click' , listActive)

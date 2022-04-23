@@ -109,17 +109,17 @@
         <section id="blogs">
             <div class="container">
                 <div class="layout_grids">
-                    <button class="btn">
-                        <img src="assets/img/blog/Vector.png" alt="">
+                    <button class="btn active" id="grid">
+                        <i class='bx bx-grid-small' ></i>
                     </button>
-                    <button class="btn">
-                        <img src="assets/img/blog/Vector (1).png" alt="">
+                    <button class="btn" id="list">
+                        <i class='bx bx-list-ul'></i>
                     </button>
                 </div>
-                <div class="grid blogs_content blogH">
-                    <div class="span-2 single_content">
-                        <div>
-                            <img src="assets/img/blog/img-1.jpg" alt="" class="img-fluid">
+                <div class="blogs_content blogH" id="Blogview">
+                    <div data-aos="fade-right" class="h-3 single_content">
+                        <div class="content_img">
+                            <img src="assets/img/blog/img-1.jpg" alt="" class="img-fluid" >
                         </div>
                         <div class="blog_details">
                             <h3>Understanding the Gatsby lifecycle</h3>
@@ -127,18 +127,18 @@
                             <a href="#"> June 14th  ·  15min read</a>
                         </div>
                     </div>
-                    <div class="single_content">
-                        <div>
+                    <div data-aos="fade-left" class="h-2 single_content">
+                        <div class="content_img">
                             <img src="assets/img/blog/img.jpg" alt="" class="img-fluid">
                         </div>
                         <div class="blog_details">
                             <h3>Why we built a company before building a product</h3>
-                            <p>At Narative, we’ve been fans of Gatsby from day one, using it to build performant and flexible products for both clients and ourselves. With th...</p>
+                            <p>At Narative, we’ve been fans of Gatsby from day one...</p>
                             <a href="#"> June 14th  ·  15min read</a>
                         </div>
                     </div>
-                    <div class="single_content">
-                        <div>
+                    <div data-aos="fade-up" class="h-2 single_content">
+                        <div class="content_img">
                             <img src="assets/img/blog/img-3.jpg" alt="" class="img-fluid">
                         </div>
                         <div class="blog_details">
@@ -147,8 +147,8 @@
                             <a href="#"> June 14th  ·  15min read</a>
                         </div>
                     </div>
-                    <div class=" span-2 single_content">
-                        <div>
+                    <div data-aos="fade-left" class="h-3  single_content">
+                        <div class="content_img">
                             <img src="assets/img/blog/img-2.jpg" alt="" class="img-fluid">
                         </div>
                         <div class="blog_details">
@@ -157,8 +157,8 @@
                             <a href="#"> June 14th  ·  15min read</a>
                         </div>
                     </div>
-                    <div class="span-2 single_content">
-                        <div>
+                    <div data-aos="fade-right" class="h-2 single_content">
+                        <div class="content_img">
                             <img src="assets/img/blog/img-4.jpg" alt="" class="img-fluid">
                         </div>
                         <div class="blog_details">
@@ -167,8 +167,8 @@
                             <a href="#"> June 14th  ·  15min read</a>
                         </div>
                     </div>
-                    <div class="single_content">
-                        <div>
+                    <div data-aos="fade-up" class="h-3 single_content">
+                        <div class="content_img">
                             <img src="assets/img/blog/img-5.jpg" alt="" class="img-fluid">
                         </div>
                         <div class="blog_details">
@@ -178,6 +178,13 @@
                         </div>
                     </div>
                 </div>
+                <ul class="pagination flex" style="justify-content: flex-start;column-gap: 20px;">
+                    <li><a class="active" href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li class="disabled">...</li>
+                    <li><a href="#">12</a></li>
+                    <li><a href="#">next</a></li>
+                </ul>
             </div>
         </section>
 
@@ -262,6 +269,11 @@
         </div>
     </footer>
 
+
+<!-- fixed button on bottom -->
+<button class="btn fixed_btn">
+    <i class='bx bx-up-arrow-alt'></i>
+</button>
 
     <!--==================================== SETUP JS VENDOR FILE LINKS ================================= -->
 
