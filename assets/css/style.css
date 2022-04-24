@@ -351,26 +351,63 @@ i{
 }
 
 /*============================ BLOG IMAGE CHANGES ==========================*/
+
 .blog_content .hero_img-contents{
     height: 460px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
 }
+
 .blog_content .img-content img{
     width:620px;
     height: auto;
 }
+
 .blog_content .img-content .back-img img{
     width:360px;
     height: auto;
     object-fit: cover;
 }
+
 .blog_content .img-content .back-img{
     top:-55px;
     right:155px;
 }
 
+/*============================ PODECAST IMAGE CHANGES ==========================*/
+
+.podecast#hero{
+    padding-top: 70px;
+}
+.podecast .vision{
+    top:-40px;
+    right:20px;
+}
+.hero-details h3{
+    font-size: var(--text-52);
+    line-height: 60px;
+    font-weight: 400;
+}
+.hero-details p{
+    font-size: var(--text-18);
+    line-height: 27px;
+    margin:20px 0 40px;
+}
+.podecast_img-content{
+    width:490px;
+    height: 480px;
+    background-image: url('../img/podcast/Ellipse\ 2.png');
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.podecast_img-content img{
+    width:350px;
+    height: auto;
+}
 /*============================ CASE SECTION LAYTOUT DESIGN ==========================*/
 
 
@@ -1102,6 +1139,18 @@ i{
         top:-65px;
         right:130px;
     }
+
+    /*============================ RESPONSIVE PODCAST HERO SECTION DESIGN ==========================*/
+
+    .podecast_img-content{
+        width:420px;
+        height: 400px;
+        
+    }
+    
+    .podecast_img-content img{
+        width:310px;
+    }
 }
 
 @media screen and (max-width: 1080px) {
@@ -1388,6 +1437,28 @@ i{
         width: 60%;
     }
   
+    /*============================ RESPONSIVE PODCAST HERO SECTION DESIGN ==========================*/
+    
+    .hero-details h3{
+        font-size: var(--text-36);
+        line-height: 40px;
+    }
+    
+    .hero-details p{
+        font-size: var(--text-16);
+        line-height:var(--text-24);
+    }
+
+    .podecast_img-content{
+        width: 320px;
+        height: 310px;
+        justify-self: center;
+    }
+    
+    .podecast_img-content img{
+        width:240px;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -1614,6 +1685,22 @@ i{
         font-size: var(--text-14);
     }
 
+    /*============================ RESPONSIVE PODECASE HERO SECTION DESIGN ==========================*/
+
+    .hero-details h3{
+        font-size: var(--text-32);
+        line-height: 40px;
+    }
+
+    .hero-details p{
+        font-size: var(--text-16);
+        line-height:var(--text-24);
+    }
+
+    .podecast .vision{
+        right:-15px;
+    }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -1792,6 +1879,19 @@ i{
         justify-content: flex-start;
     }
 
+    /*============================ RESPONSIVE PODECASE HERO SECTION DESIGN ==========================*/
+
+    .hero-details h3{
+        font-size: var(--text-24);
+        line-height: 40px;
+    }
+
+    .hero-details p{
+        font-size: var(--text-14);
+        overflow-wrap: break-word;
+        line-height:var(--text-24);
+    }
+   
 }
 
 @media screen and (max-width: 480px){
@@ -1894,5 +1994,17 @@ i{
     #blogs .list .single_content{
         grid-template-columns: repeat(1,1fr);
         margin:10px 0;
+    }
+
+    /*============================ RESPONSIVE PODECASE HERO SECTION DESIGN ==========================*/
+
+
+    .podecast_img-content {
+        width: 260px;
+        height: 250px;
+    }
+
+    .podecast_img-content img {
+        width: 180px;
     }
 }
