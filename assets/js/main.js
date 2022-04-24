@@ -76,16 +76,7 @@ window.addEventListener('load', ActiveButton)
     list.addEventListener('click' , listActive)
   }
 /*=================DATA AOS / SCROLL ANIMATION======================== */
-// var swiper = new Swiper(".mySwiper", {
-//   direction: "vertical",
-//   slidesPerView: 1,
-//   spaceBetween: 30,
-//   mousewheel: true,
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-// });
+
 var swiper = new Swiper(".mySwiper", {
   direction: "vertical",
   pagination: {

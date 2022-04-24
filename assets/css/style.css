@@ -814,11 +814,11 @@ i{
     grid-column: span 2;
 }
 
-#blogs .blogH .content_img{
+.blogH .content_img{
     height: 280px;
 }
 
-#blogs .blogH .content_img img{
+.blogH .content_img img{
     object-fit: cover;
     background-position: center;
 }
@@ -905,6 +905,53 @@ i{
     height: 100%;
     left: 70px;
     top: 0;
+}
+
+/*============================ POST CONTENT SECTION SECTION LAYOUT DESIGN ==========================*/
+
+.post_content {
+    margin-top: 80px;
+    overflow: hidden;
+}
+.post_texts blockquote{
+    margin: 40px 260px;
+}
+.post_texts blockquote p{
+    margin:30px 0;
+    color:var(--clr-80);
+}
+.post_texts h2{
+    margin: 0 210px;
+    font-size:var(--text-36);
+    font-weight: 700;
+    line-height: 135%;
+    font-family: var(--Merriweather);
+}
+.post_texts blockquote p,
+.post_texts h4{
+    font-size: var(--text-18);
+    line-height: 175%;
+    font-family: var(--Jakarta);
+}
+.divider .dr{
+    width:70%;
+    height: 1px;
+    background-color:var(--clr-73);
+}
+.divider a{
+    color:var(--clr-73);
+    line-height: 136%;
+    font-size:var(--text-16);
+}
+.post_time{
+    margin-top: 10px;
+}
+.post_time a{
+    color:  var(--clr-40);
+    font-size: var(--text-14);
+}
+.post_content a:hover{
+    color:var(--clr-4D);
 }
 /*============================ FOOTER SECTION LAYOUT DESIGN ==========================*/
 
@@ -1283,12 +1330,12 @@ i{
 
     /********main blog section*****/
 
-    #blogs .blogH .content_img{
+     .blogH .content_img{
         height: 240px;
     }
 
-    .single_content .blog_details h3{
-        font-size: var(--text-18);
+    .single_content .blog_details h3 a{
+        font-size: var(--text-20);
         line-height: 26px;
     }
 
@@ -1321,6 +1368,24 @@ i{
     }
     .post_img {
         height: 310px;
+    }
+
+    /* .post_content {
+        margin-top: 80px;
+        overflow: hidden;
+    } */
+    .post_texts blockquote{
+        margin: 20px 140px;
+    }
+    .post_texts blockquote p{
+        font-size: var(--text-16);        
+    }
+    .post_texts h2{
+        margin: 0 100px;
+        font-size: var(--text-32);
+    }
+    .divider .dr{
+        width: 60%;
     }
   
 }
@@ -1463,10 +1528,10 @@ i{
         gap:20px;
     }
 
-    #blogs .blogH .content_img{
+     .blogH .content_img{
         height: 140px;
     }
-    .single_content .blog_details h3{
+    .single_content .blog_details h3 a{
         font-size: var(--text-16);
         line-height: 26px;
     }
@@ -1509,16 +1574,44 @@ i{
         font-size: var(--text-28);
         line-height: 40px;
     }
+    
     .posts{
         height: 240px;
         margin-top: 30px;
     }
+    
     .post_img {
         width:80%;
         height:240px;
     }
+    
     .post_title a{
         margin-top: 8px;
+    }
+
+    .post_content {
+        margin-top: 30px;
+    }
+    
+    .post_texts blockquote{
+        margin: 20px 80px;
+    }
+    
+    .post_texts blockquote p{
+        font-size: var(--text-16);        
+    }
+    
+    .post_texts h2{
+        margin: 0 30px;
+        font-size: var(--text-24);
+    }
+    
+    .divider .dr{
+        width: 50%;
+    }
+    
+    .divider a{
+        font-size: var(--text-14);
     }
 
 }
@@ -1621,10 +1714,12 @@ i{
     #blogs .blogH .content_img{
         height: 110px;
     }
-
     .single_content .blog_details h3{
+        line-height: 22px;
+    }
+    .single_content .blog_details h3 a{
         font-size: var(--text-14);
-        line-height: 20px;
+        line-height: 18px;
     }
 
     .single_content .blog_details p,
@@ -1647,16 +1742,56 @@ i{
         font-size: var(--text-20);
         line-height: 40px;
     }
+
     .posts{
         height: 150px;
     }
+
     .post_img {
         width:85%;
         height:150px;
     }
+
     .swiper-horizontal>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite, .swiper-pagination-progressbar.swiper-pagination-horizontal.swiper-pagination-progressbar-opposite, .swiper-pagination-progressbar.swiper-pagination-vertical, .swiper-vertical>.swiper-pagination-progressbar {
         left: 30px;
     }
+
+    /*post content*/
+
+    .post_content {
+        margin-top: 0;
+    }
+
+    .post_texts blockquote{
+        margin: 20px 0;
+    }
+
+    .post_texts blockquote p{
+        font-size: var(--text-16); 
+        margin: 15px 0;       
+    }
+
+    .post_texts blockquote h4{
+        font-size: var(--text-16);
+    }
+
+    .post_texts h2{
+        margin: 0;
+        font-size: var(--text-20);
+    }
+
+    .divider .dr{
+        width: 50%;
+    }
+
+    .divider a{
+        font-size: var(--text-14);
+    }
+
+    .post_time{
+        justify-content: flex-start;
+    }
+
 }
 
 @media screen and (max-width: 480px){
