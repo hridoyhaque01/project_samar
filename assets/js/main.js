@@ -75,7 +75,25 @@ window.addEventListener('load', ActiveButton)
   if(list){
     list.addEventListener('click' , listActive)
   }
-
+/*=================DATA AOS / SCROLL ANIMATION======================== */
+// var swiper = new Swiper(".mySwiper", {
+//   direction: "vertical",
+//   slidesPerView: 1,
+//   spaceBetween: 30,
+//   mousewheel: true,
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+// });
+var swiper = new Swiper(".mySwiper", {
+  direction: "vertical",
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+    clickable: true,
+  },
+});
 /*=================DATA AOS / SCROLL ANIMATION======================== */
  
 function aos_init() {
