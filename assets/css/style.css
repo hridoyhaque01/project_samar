@@ -990,6 +990,102 @@ i{
 .post_content a:hover{
     color:var(--clr-4D);
 }
+/*============================ PODCASTS SECTION LAYOUT DESIGN ==========================*/
+.podcast_av{
+    padding:40px 0;
+}
+
+.av_content .av_title h4{
+    font-size: var(--text-24);
+    font-weight: 600;
+    line-height: var(--text-36);
+    font-family: var(--Inter);
+    letter-spacing: -1px;
+}
+
+.av_servers ul li{
+    display: inline-block;
+    margin-left:40px;
+}
+
+.av_servers ul li:first-child{
+    margin: 0;
+}
+
+.av_servers ul li a span{
+    font-family: var(--Inter);
+    font-size:var(--text-16);
+    font-weight: 600;
+    color:#14142B;
+    margin-left: 10px;
+}
+
+/*============================ PODCASTS GRAPH SECTION LAYOUT DESIGN ==========================*/
+
+.graph{
+    padding: 120px 0 48px;
+}
+
+.graph_content{
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px ;
+}
+
+.single_graph{
+    height: 444px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:64px 40px;
+}
+
+.single_graph.blue{
+    background-color:#0066D9;
+}
+.single_graph.green{
+    background-color:#36BA54;
+}
+.single_graph.yellow{
+    background-color:#FACC15;
+}
+.single_graph.red{
+    background-color:#DB3236;
+}
+
+
+.single_graph.up{
+    transform: translateY(-80px);
+}
+
+
+.graph_img{
+    text-align: center;
+}
+
+.graph_img img{
+    width:128px;
+    height: 128px;
+}
+
+.graph_text{
+    color: var(--clr-F3);
+    font-family: var(--Inter);
+
+}
+.graph_text h2,
+.graph_text h3{
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.graph_text h2{
+    font-size:var(--text-45);
+}
+
+.graph_text h3{
+    font-size: var(--text-28);
+}
+
 /*============================ FOOTER SECTION LAYOUT DESIGN ==========================*/
 
 .footer{
@@ -1027,6 +1123,11 @@ i{
 }
 
 /*============================ RESPONSIVE DESIGN ==========================*/
+@media screen and (min-width: 1400px){
+    .av_servers ul li{
+        margin-left:87px;
+    }
+}
 
 @media screen and (max-width: 1200px) {
 
@@ -1208,6 +1309,28 @@ i{
         width:37px;
         height: 37px;
     }
+
+    /*============================ RESPONSIVE PODCAST SECTION DESIGN ==========================*/
+
+    .av_content .av_title h4{
+        font-size: var(--text-18);
+        line-height: var(--text-24);
+    }
+    
+    .av_servers ul li a span{
+        font-family: var(--Inter);
+        font-size:var(--text-14);
+        font-weight: 600;
+        color:#14142B;
+        margin-left: 10px;
+    }
+
+    /*============================ RESPONSIVE PODCAST GRAPH SECTION DESIGN ==========================*/
+
+    /* .graph_content{
+        grid-template-columns: repeat(3,1fr);
+       
+    } */
 }
 
 @media screen and (max-width: 992px) {
@@ -1459,6 +1582,40 @@ i{
         width:240px;
     }
 
+    /*============================ RESPONSIVE PODCAST SECTION DESIGN ==========================*/
+
+    .av_content .av_title h4{
+        font-size: var(--text-16);
+        line-height: var(--text-24);
+    }
+
+    .av_servers ul{
+        white-space: nowrap;
+
+    }
+
+    .av_servers ul li{
+        margin-left:20px;
+    }
+    
+    .av_servers ul li a img{
+         width:25px;
+         height: auto;
+     }
+
+    .av_servers ul li a span{
+        font-size:var(--text-14);
+        margin-left: 5px;
+    }
+
+    
+    /*============================ RESPONSIVE PODCAST GRAPH SECTION DESIGN ==========================*/
+
+    .graph_content{
+        grid-template-columns: repeat(2,1fr);
+       
+    }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -1699,6 +1856,35 @@ i{
 
     .podecast .vision{
         right:-15px;
+    }
+
+    /*============================ RESPONSIVE PODCAST SECTION DESIGN ==========================*/
+    .av_content{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .av_content .av_title h4{
+        font-size: var(--text-16);
+        line-height: var(--text-24);
+    }
+
+    .av_servers ul{
+        white-space: normal;
+        text-align: center;
+    }
+    
+    .av_servers ul li{
+        margin:4px 20px;
+    }
+    
+    .av_servers ul li a img{
+         width:25px;
+         height: auto;
+     }
+
+    .av_servers ul li a span{
+        font-size:var(--text-14);
+        margin-left: 5px;
     }
 
 }
