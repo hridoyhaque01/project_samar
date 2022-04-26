@@ -1085,7 +1085,73 @@ i{
 .graph_text h3{
     font-size: var(--text-28);
 }
+/*--==================================== PODCASTS EPISODE SECTION LAYOUT DESIGN ================================= */
+.episodes{
+    font-family: var(--Inter);
+    color: #14142B;
 
+}
+
+.episode_description{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.episode_description h2{
+    font-size: var(--text-32);
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.episode_description p{
+    font-size: var(--text-16);
+    line-height: 150%;
+    margin-top:16px;
+}
+
+.episode_content{
+    margin: 64px 0;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 16px;
+    row-gap: 30px;
+}
+
+.single_episode{
+    position: relative;
+    transition: .4s;
+    border-radius: 4px;
+}
+
+.single_episode:hover{
+    box-shadow: 0 0 30px rgba(85, 65, 199, 0.2);
+}
+
+.single_episode .ep_img{
+    position: relative;
+}
+
+.single_episode .ep_img .mic{
+    position: absolute;
+    top:20px;
+    right:20px;
+}
+.ep_details{
+    padding:20px;
+}
+
+
+.ep_details h3 a{
+    font-size: var(--text-24);
+    font-weight: 600;
+    line-height: 30px;
+    color: #14142B;
+}
+.ep_details p{
+    margin:15px 0;
+}
+.ep_details .flex{
+    display: inline-flex;
+    column-gap: 8px;
+}
 /*============================ FOOTER SECTION LAYOUT DESIGN ==========================*/
 
 .footer{
@@ -1331,6 +1397,23 @@ i{
         grid-template-columns: repeat(3,1fr);
        
     } */
+    .single_graph{
+        height: 350px;
+        padding:44px 20px;
+    }
+    
+    .graph_text h2 {
+        font-size: var(--text-36);
+    }
+
+    .graph_text h3 {
+        font-size: var(--text-22);
+    }
+
+    .graph_img img{
+        width:90px;
+        height: 90px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -1611,10 +1694,10 @@ i{
     
     /*============================ RESPONSIVE PODCAST GRAPH SECTION DESIGN ==========================*/
 
-    .graph_content{
+    /* .graph_content{
         grid-template-columns: repeat(2,1fr);
        
-    }
+    } */
 
 }
 
@@ -1886,6 +1969,11 @@ i{
         font-size:var(--text-14);
         margin-left: 5px;
     }
+
+    .graph_content{
+        grid-template-columns: repeat(2,1fr);
+    }  
+
 
 }
 
@@ -2192,5 +2280,25 @@ i{
 
     .podecast_img-content img {
         width: 180px;
+    }
+
+    .graph_content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .single_graph.up{
+        transform: translateY(0);
+    }
+
+    .graph_text h2 {
+        font-size: var(--text-32);
+    }
+
+    .graph_text h3 {
+        font-size: var(--text-18);
+    }
+
+    .graph_img img{
+        width:100px;
+        height: 100px;
     }
 }
