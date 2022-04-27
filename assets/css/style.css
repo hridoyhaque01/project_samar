@@ -1261,6 +1261,7 @@ i{
 .signle_podcast-hero{
     padding: 40px 0;
     font-family: var(--Inter);
+    overflow: hidden;
 }
 
 .single_hero-content{
@@ -1417,6 +1418,40 @@ i{
     display: inline-flex;
     column-gap: 13px;
     color:var(--clr-14);
+}
+
+/*============================ CONTACT SECTION LAYOUT DESIGN ==========================*/
+
+.contact_content{
+    margin: 30px 0;
+}
+
+.contact_content form{
+    margin: 20px 0;
+}
+
+.contact_content .form-group{
+    margin: 20px 0;
+}
+
+.contact_content .form-group input,
+.contact_content .form-group textarea{
+    width:70%;
+    height: 50px;
+    padding-left: 15px;
+    outline: none;
+    border: 1px solid var(--clr-23);
+    transition: .3s;
+}
+
+.contact_content .form-group input:focus,
+.contact_content .form-group textarea:focus{
+    border-color: var(--clr-07);
+}
+
+.contact_content .form-group textarea{
+    height: 150px;
+    padding: 15px;
 }
 /*============================ FOOTER SECTION LAYOUT DESIGN ==========================*/
 
@@ -2466,6 +2501,11 @@ i{
     }
 
     
+    /*====================== RESPONSIVE CONTACT SECTION DESIGN ====================*/
+    .contact_content .form-group input,
+    .contact_content .form-group textarea{
+        width:100%;
+    }
     /*====================== RESPONSIVE BLOGS SECTION DESIGN
     ====================*/
 
