@@ -147,6 +147,11 @@ i{
     color:var(--clr-73);
 }
 
+/* .dark{
+    background: #000 !important;
+} */
+
+
 .btn{
     border:0;
     outline: 0;
@@ -286,6 +291,7 @@ i{
     justify-content: space-between;
     align-items: center;
 }
+
 .hero-content .vision{
     position: absolute;
     top:0;
@@ -293,14 +299,22 @@ i{
     display: inline-block;
     background-color: transparent;
     z-index: 99;
+    cursor: default;
 }
+
 .light_vision{
     display: none !important;
 }
+
 .hero-details .hello_btn{
     padding:12px 24px;
     border-radius: 10px;
     background-color: var(--clr-FFD);
+    transition: .4s;
+}
+
+.hero-details .hello_btn:hover{
+    background-color:var(--clr-ED);
 }
 
 .btn-group{
@@ -308,12 +322,45 @@ i{
 }
 
 .hero_btn{
+    position: relative;
     width:250px;
     height: 70px;
     border-radius: 16px;
     font-size: 24px;
     font-weight: 600;
+    overflow: hidden;
+    transition: .4s;
 }
+
+.hero_btn:hover{
+    background-color: transparent;
+}
+
+.hero_btn::after{
+    position: absolute;
+    content: "";
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--clr-64);
+    z-index: -1;
+    transition: .4s;
+}
+
+.hero_btn:hover:after{
+    width: 100%;
+}
+
+.hero_btn.btn_bdr::after{
+    background-color: var(--clr-07);
+}
+
+.btn_bdr:hover{
+    border-color: var(--clr-07);
+    color:#fff;
+}
+
 
 .btn_bdr{
     background-color: transparent;
@@ -349,12 +396,14 @@ i{
     border-radius: 16px;
     background-color: var(--clr-FF);
     color:var(--clr-00);
+    cursor: default;
 }
 
 .img-content .design_btn{
     right:10px;
     margin-top: 120px;
 }
+
 
 /*============================ BLOG IMAGE CHANGES ==========================*/
 
@@ -550,6 +599,12 @@ i{
     padding:16px 30px;
     background-color: var(--clr-F9);
     border-radius: 30px;
+    transition: .4s;
+}
+
+.single-box .btn-box:hover{
+    background-color:var(--clr-74);
+    color:var(--clr-FF) !important;
 }
 
 .box-texts .blog_btn{
@@ -1488,6 +1543,17 @@ i{
 .copyright p{
     font-size: var(--text-14);
 }
+
+/*============================ DARK THEME
+==========================*/
+
+
+
+
+
+
+
+
 
 /*============================ RESPONSIVE DESIGN ==========================*/
 @media screen and (min-width: 1400px){

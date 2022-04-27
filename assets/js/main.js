@@ -23,6 +23,7 @@ closeMenu.addEventListener('click',()=>{
 
 
 /*================= FIXED BUTTON ======================== */
+
 const fixed_btn = document.querySelector('.fixed_btn')
 
 function ActiveButton(){
@@ -75,6 +76,8 @@ window.addEventListener('load', ActiveButton)
   if(list){
     list.addEventListener('click' , listActive)
   }
+
+
 /*=================DATA AOS / SCROLL ANIMATION======================== */
 
 var swiper = new Swiper(".mySwiper", {
@@ -85,6 +88,14 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+
+/*================= DARK THEME ======================== */
+
+const light = document.querySelector('.night_vision'),
+      dark = document.querySelector('.night_vision')
+
+
 /*=================DATA AOS / SCROLL ANIMATION======================== */
  
 function aos_init() {
