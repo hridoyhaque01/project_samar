@@ -92,11 +92,21 @@ var swiper = new Swiper(".mySwiper", {
 
 /*================= DARK THEME ======================== */
 
-const light = document.querySelector('.night_vision'),
-      dark = document.querySelector('.night_vision')
+// const light = document.querySelector('.night_vision'),
+//       dark = document.querySelector('.night_vision')
 
 
-/*=================DATA AOS / SCROLL ANIMATION======================== */
+/*================= COPYRIGHTS YEAR ======================== */
+
+const year = document.getElementById('year')
+
+if(year){
+  let date = new Date()
+  let year = date.getFullYear()
+  document.getElementById('year').innerHTML = year
+}
+
+/*================= DATA AOS / SCROLL ANIMATION ======================== */
  
 function aos_init() {
     AOS.init({
