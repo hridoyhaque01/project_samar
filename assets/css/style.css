@@ -843,7 +843,7 @@ i{
 }
 
 .project_content{
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 30px;
     margin: 40px;
 }
@@ -1882,7 +1882,12 @@ i{
     }
 
     /*============================ RESPONSIVE PROJECT SECTION DESIGN ==========================*/
-
+    .project_content{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+        margin: 40px 0;
+    }
+    
     .project_details h3{
         font-size: var(--text-16);
         color:var(--clr-14);
@@ -2161,6 +2166,7 @@ i{
     #hero{
         padding:40px;
     }
+
     .hero-content{
         grid-template-columns: repeat(1,1fr);
         row-gap: 20px;
@@ -2170,7 +2176,6 @@ i{
         grid-row-start: 1;
         text-align: center;
     }
-
     
 /*============================ RESPONSIVE ABOUT ME SECTION DESIGN ==========================*/
 
@@ -2249,6 +2254,7 @@ i{
     }
 
     /*============================ RESPONSIVE WORKING SECTION DESIGN ==========================*/
+
     .work_content{
         height: 250px;
     }
@@ -2270,9 +2276,7 @@ i{
 
     /*============================ RESPONSIVE PROJECT SECTION DESIGN ==========================*/
 
-    .project_content{
-        grid-template-columns: repeat(1,1fr);
-    }
+    
     
     .project_details h3{
         font-size: var(--text-16);
@@ -2404,6 +2408,7 @@ i{
     }
 
     /*============================ RESPONSIVE PODCAST SECTION DESIGN ==========================*/
+
     .av_content{
         flex-direction: column;
         row-gap: 20px;
@@ -2504,6 +2509,23 @@ i{
         font-size: var(--text-28);
     }
 
+    /*============================ RESPONSIVE SINGLE PROJECTS DESIGN ==========================*/
+
+    .project_content {
+        grid-template-columns: repeat(1,1fr);
+        margin: 40px 0;
+    }
+
+    .project_details a{
+        font-size: var(--text-12);
+        font-weight: 400;
+    }
+    
+    .project_details h3 {
+        font-size: var(--text-14);
+        font-weight: 600;
+    }
+    
     /*============================ RESPONSIVE SINGLE CASES DESIGN ==========================*/
 
     .cases .single_case{
