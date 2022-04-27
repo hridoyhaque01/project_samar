@@ -1823,7 +1823,7 @@ i{
         top:0;
         width:55%;
         min-height: 100vh;
-        background-color:var(--clr-FF8);
+        background-color:var(--clr-FF);
         padding: 60px 30px 30px 30px;
         border-radius: 15px 0px 0px 15px;
         box-shadow: -2px 0 10px rgba(73, 73, 73, 0.4);
@@ -2487,7 +2487,9 @@ i{
 @media screen and (max-width: 575px) {
 
 /*============================ RESPONSIVE NAVBAR DESIGN ==========================*/
-
+    .navbar_main-menu{
+        width:75%;
+    }
     .navbar-button .form-btn .nav-btn{
         padding: 5px 8px;
         font-size: 12px;
