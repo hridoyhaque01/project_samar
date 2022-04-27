@@ -66,6 +66,7 @@ body{
     --clr-B4 : #B49467;
     --clr-74 : #746FA7;
     --clr-9E : #9E69AA;
+    --clr-14 : #14142B;
     --clr-rgba1 : rgba(8, 8, 11, 0.15);
     --swiper-theme-color: #232323; 
 
@@ -1035,7 +1036,7 @@ i{
     font-family: var(--Inter);
     font-size:var(--text-16);
     font-weight: 600;
-    color:#14142B;
+    color: var(--clr-14);
     margin-left: 10px;
 }
 
@@ -1109,7 +1110,7 @@ i{
 
 .episodes{
     font-family: var(--Inter);
-    color: #14142B;
+    color: var(--clr-14);
 
 }
 
@@ -1164,7 +1165,7 @@ i{
     font-size: var(--text-24);
     font-weight: 600;
     line-height: 30px;
-    color: #14142B;
+    color: var(--clr-14);
 }
 
 .ep_details p{
@@ -1174,7 +1175,7 @@ i{
 .ep_details .flex{
     display: inline-flex;
     column-gap: 8px;
-    color: #14142B;
+    color:var(--clr-14);
 }
 
 .ep_details a{
@@ -1218,7 +1219,7 @@ i{
     font-size: var(--text-32);
     line-height: 120%;
     font-weight: 700;
-    color:var(--clr-11);
+    color:var(--clr-14);
     margin:16px 0 28px;
 }
 
@@ -1237,15 +1238,116 @@ i{
     margin-left: 10px;
 }
 
+
+
+/*--==================================== SINGLE PODCAST DETAILS SECTION STRUCTURE LAYOUT ================================= */
+
 .episode_details{
-    margin:30px 0;
+    font-family: var(--Inter);
+    color:var(--clr-14);
 }
 
 .episode_grid{
     grid-template-columns: repeat(3,1fr);
 }
 
+.episode_context{
+    padding:30px 60px 120px;
+}
 
+.podecast_title{
+    grid-template-columns: repeat(3,1fr);
+}
+
+.podecast_title h1{
+    margin-left: 40px;
+    font-size: var(--text-32);
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.episode_context blockquote{
+    margin:40px 0;
+}
+
+.episode_context blockquote p{
+    margin: 20px 0;
+    line-height: 150%;
+}
+
+.episode_context blockquote ul li{
+    list-style: disc outside;
+    margin: 10px 0;
+}
+
+.episode_context h2{
+    font-size: var(--text-24);
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.context_mekar{
+    grid-template-columns: repeat(2,1fr);
+    justify-items: start;
+    align-items: center;
+}
+
+.context_mekar p{
+    line-height: 24px;
+}
+
+.profile{
+    /* text-align: center; */
+    padding: 10px 0 10px 60px;
+    border-left: 10px solid var(--clr-FC);
+}
+
+.profile h3{
+    font-size: var(--text-24);
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.profile div a{
+    margin:0 10px;
+    transition: .4s;
+    display: inline-block;
+}
+
+.profile div a:hover{
+    transform: translateY(-4px);
+}
+
+.listening{
+    justify-self: center;
+}
+
+.listening h3{
+    font-size: var(--text-24);
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.listening ul{
+    margin-top: 70px;
+}
+
+.listening ul li{
+    display: block;
+    margin: 20px 0;
+    padding: 10px ;
+    transition: .4s;
+}
+
+.listening ul li:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.listening ul li a{
+    display: inline-flex;
+    column-gap: 13px;
+    color:var(--clr-14);
+}
 /*============================ FOOTER SECTION LAYOUT DESIGN ==========================*/
 
 .footer{
@@ -1520,6 +1622,15 @@ i{
     .podecast_ep-btn{
         margin-top: 20px;
     }
+
+    .podecast_title{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .podecast_title .span-2{
+        grid-column: span 1;
+    }
+  
     
 
 }
@@ -1835,7 +1946,17 @@ i{
     .podecast_ep-btn{
         margin-top: 14px;
     }
+   
+    .podecast_title h1 {
+        margin-left: 20px;
+        font-size: var(--text-28);
+    }
 
+
+    .context_mekar {
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -2127,6 +2248,30 @@ i{
         padding-right: 80px;
     }
     
+    .episode_grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .episode_grid .span-2 {
+        grid-column: span 1;
+    }
+
+    
+
+    .listening ul{
+        margin: 30px 0;
+        text-align: center;
+    }
+    
+    .listening ul li{
+        display: inline-block;
+        margin:10px;
+    }
+    
+    .listening ul li a img{
+        width:25px;
+        height: auto;
+    }
 
 }
 
@@ -2342,6 +2487,27 @@ i{
 
     .podcast_hero-text{
         padding-right: 0;
+    }
+
+    .episode_context {
+        padding: 30px 0;
+    }
+   
+    .podecast_title h1 {
+        font-size: var(--text-24);
+    }
+
+    .episode_context h2 {
+        font-size: var(--text-18);
+        line-height: 24px;
+    }
+
+    .profile h3{
+        font-size:var(--text-18);
+    }
+
+    .profile p{
+        font-size: var(--clr-14);
     }
 }
 
