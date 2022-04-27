@@ -132,6 +132,11 @@ i{
     overflow: hidden !important;
 }
 
+.section_title{
+    font-size: 80px;
+    font-weight: 700;
+}
+
 .py-3{
     padding: 30px;
 }
@@ -409,6 +414,10 @@ i{
     width:350px;
     height: auto;
 }
+
+
+
+
 /*============================ CASE SECTION LAYTOUT DESIGN ==========================*/
 
 
@@ -753,7 +762,68 @@ i{
     margin-left: 0;
 }
 
+/*============================ ABOUT ME SECTION LAYTOUT DESIGN ==========================*/
 
+.about_me{
+    padding: 100px 0 30px;
+}
+
+.about_me-content blockquote p{
+    margin:20px 0;
+}
+
+.about_img{
+    text-align: center;
+}
+
+.about_img img{
+    max-width: 100%;
+}
+
+/*============================ PROJECTS SECTION LAYTOUT DESIGN ==========================*/
+
+.project{
+    padding:100px 0 30px;
+    overflow: hidden;
+}
+
+.project_content{
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin: 40px;
+}
+
+.single_project{
+    background-color: var(--clr-FC);
+    border-radius: 50px;
+}
+
+.project_details{
+    margin:0 30px 30px 30px;
+    padding:20px;
+    border-radius: 30px;
+    background-color:var(--clr-FF8);
+}
+
+.project_details a{
+    color:var(--clr-14);
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 10px;
+    transition: .3s;
+    background-color:var(--clr-FDB);
+    padding:3px 7px;
+    border-radius: 10px;
+}
+
+.project_details a:hover{
+    color:var(--clr-64);
+}
+
+.project_details h3{
+    font-size: var(--text-20);
+    color:var(--clr-14);
+}
 /*============================ BLOG SECTION LAYOUT DESIGN ==========================*/
 #blogs{
     padding:30px 0;
@@ -1546,6 +1616,13 @@ i{
         padding:10px 15px;
     }
 
+/*============================ RESPONSIVE ABOUT ME SECTION DESIGN ==========================*/
+
+
+    .section_title{
+        font-size: 60px;
+    }
+
 /*============================ RESPONSIVE BOXES SECTION DESIGN ==========================*/
 
     .box-img img{
@@ -1701,6 +1778,13 @@ i{
     .img-content .design_btn{
         margin-top: 80px;
         right: 8px;
+    }
+
+    /*============================ RESPONSIVE PROJECT SECTION DESIGN ==========================*/
+
+    .project_details h3{
+        font-size: var(--text-16);
+        color:var(--clr-14);
     }
 
     /*============================ RESPONSIVE SINGLE CASES DESIGN ==========================*/
@@ -1985,7 +2069,15 @@ i{
         grid-row-start: 1;
         text-align: center;
     }
+
     
+/*============================ RESPONSIVE ABOUT ME SECTION DESIGN ==========================*/
+
+
+    .asection_title{
+        font-size: var(--text-40);
+    }
+        
     /*============================ RESPONSIVE SINGLE CASES SECTION DESIGN ==========================*/
     .CaseStudies{
         
@@ -2073,6 +2165,17 @@ i{
         padding: 14px 40px;
         margin-top: 20px;
         font-size: var(--text-14);
+    }
+
+    /*============================ RESPONSIVE PROJECT SECTION DESIGN ==========================*/
+
+    .project_content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .project_details h3{
+        font-size: var(--text-16);
+        color:var(--clr-14);
     }
 
     /*============================ RESPONSIVE BLOG HERO SECTION DESIGN ==========================*/
@@ -2291,6 +2394,13 @@ i{
 
     .hero_title{
         font-size: var(--text-24);
+    }
+
+    /*============================ RESPONSIVE ABOUT ME SECTION DESIGN ==========================*/
+
+
+    .section_title{
+        font-size: var(--text-28);
     }
 
     /*============================ RESPONSIVE SINGLE CASES DESIGN ==========================*/
